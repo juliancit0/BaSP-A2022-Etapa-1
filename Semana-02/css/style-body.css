@@ -1,0 +1,15 @@
+body {
+  width: 1440px;
+  height: 6864px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+header, main, footer{
+  padding-left: 160px;
+} 
+
+a{
+  text-decoration: none;
+}

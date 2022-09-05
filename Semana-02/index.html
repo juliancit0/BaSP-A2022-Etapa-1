@@ -4,38 +4,55 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style-body.css">
+        <link rel="stylesheet" href="css/style-sidebar.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
         <title>Trackgenix</title>
+        <script src="https://kit.fontawesome.com/d7c9d962f7.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div>
+            
+        </div>
         <aside>
-            <img src="assets/icons/sidebar/logo.png" alt="radium logo" width="77" height="91">
-            <div>
+            <div class="sidebar-top">
+                <img src="assets/icons/sidebar/logo.png" alt="radium logo" width="77" height="91">
+                <p>Trackgenix</p>
+            </div>
+            <div class="sidebar-middle">
                 <a href="#">
-                    <img src="assets/icons/sidebar/home.png" alt="home icon"> Home
+                    <i class="fa-solid fa-house"></i> Home
                 </a>
                 <a href="#"> 
-                    <img src="assets/icons/sidebar/person.png" alt="person icon"> Sign Up
+                    <i class="fa-solid fa-user"></i> Sign Up
                 </a>
                 <a href="#">
-                    <img src="assets/icons/sidebar/person.png" alt="person icon"> Login
+                    <i class="fa-solid fa-user"></i> Login
                 </a>
             </div>
-            <div>
+            <div class="sidebar-bot">
                 <p>Contact us</p>
-                <div>
-                    <img src="assets/icons/sidebar/message.png" alt="message icon">
-                    <p>trackgenix@gmail.com</p>
-                </div>
-                <div>
-                    <img src="assets/icons/sidebar/phone.png" alt="phone icon">
-                    <p>(000) 000-0000</p>
-                </div>
-                <div>
-                    <img src="assets/icons/sidebar/home-form.png" alt="home with form icon">
-                    <p>
-                        1234 Somewhere Road #8254
-                        Nashville,TN 00000-0000
-                    </p>
+                <div id="line-cu"></div>
+                <div class="all-icons-info">
+                    <div class= "icon-info" id="mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>trackgenix@gmail.com</p>
+                    </div>
+                    <div class= "icon-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(000) 000-0000</p>
+                    </div>
+                    <div class= "icon-info">
+                        <i id="icon-city" class="fa-solid fa-city"></i>
+                        <p>
+                            1234 Somewhere Road #8254
+                            Nashville,TN 00000-0000
+                        </p>
+                    </div>
                 </div>
             </div>
         </aside>

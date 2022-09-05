@@ -1,0 +1,79 @@
+aside {
+  position: fixed;
+  width: 152px;
+  height: 900px;
+  float: left;
+  font-style: normal;
+  background-color: #ffffff;
+  color: rgb(243, 52, 19);
+}
+
+aside i {
+  width: 14px;
+  height: 14px;
+}
+
+aside .sidebar-top {
+  height: 160px;
+  background-color: rgba(55, 56, 103, 0.4);
+}
+
+.sidebar-top img {
+  width: 77px;
+  height: 91px;
+  margin: auto;
+  padding-left: 37.5px;
+  padding-top: 19px;
+}
+
+.sidebar-top p {
+  /* padding-left: 20px; */
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #373867;
+}
+
+.sidebar-middle {
+  width: 85px;
+  font-size: 15px;
+  padding: 63px 0px 307px 27.5px;
+  line-height: 55px;
+}
+
+.sidebar-middle a,
+.sidebar-middle i {
+  color: rgb(243, 52, 19);
+}
+
+.sidebar-middle i {
+  padding-right: 10px;
+}
+
+.sidebar-bot > p{
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 11px;
+}
+
+.sidebar-bot .all-icons-info{
+  font-size: 10px;
+  padding-left: 11px;
+  width: 100px;
+}
+
+.icon-info {
+  padding-top: 25px ;
+  width: 100px;
+  display: inline;
+  float: left;
+}
+
+#line-cu {
+  width: 81px;
+  height: 1px;
+  background-color: rgb(243, 52, 19);
+  margin-left: 8px;
+}
