@@ -1,20 +1,5 @@
-aside {
-    position: fixed;
-    width: 152px;
-    height: 900px;
-    background-color: #ffffff;
-    border: solid 1px black;
-    font-style: normal;
-    color: rgb(243, 52, 19);
-    float: left;
-}
 
-aside i {
-    width: 14px;
-    height: 14px;
-}
-
-aside .sidebar-top {
+.sidebar-top {
     height: 152px;
     background-color: rgba(55, 56, 103, 0.4);
 }
@@ -29,7 +14,6 @@ aside .sidebar-top {
 
 .sidebar-top p {
     text-align: center;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     color: #373867;
@@ -37,10 +21,9 @@ aside .sidebar-top {
 }
 
 .sidebar-middle {
-    width: 100px;
-    padding: 63px 0px 307px 27.5px;
-    font-size: 14pt;
-    font-style: medium;
+    width: 90px;
+    padding: 63px 0px 313px 27.5px;
+    font-size: 14px;
     line-height: 55px;
 }
 
@@ -55,21 +38,19 @@ aside .sidebar-top {
 
 .sidebar-bot > p {
     margin-left: 11px;
-    font-size: 14pt;
+    font-size: 14px;
     font-weight: bold;
 }
 
 .sidebar-bot .all-icons-info {
     width: 100px;
-    padding-left: 11px;
-    font-size: 10pt;
+    font-size: 10px;
 }
 
 .icon-info {
+    
     padding-top: 25px;
-    width: 100px;
-    display: inline;
-    float: left;
+    width: 152px;
 }
 
 #line-cu {
@@ -79,10 +60,22 @@ aside .sidebar-top {
     margin-left: 8px;
 }
 
-#icon-city {
+#icon-mail,
+#icon-phone {
     float: left;
+    padding-left: 11px;
 }
 
+#mail,
+#phone,
 #address {
     float: right;
+    width: 110px;
 }
+
+#icon-city {
+    float: left;
+    padding-top: 7px;
+    padding-left: 11px;
+}
+

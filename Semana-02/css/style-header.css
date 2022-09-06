@@ -1,42 +1,23 @@
-header{
-    width: 1288px;
-    border: solid 1px black;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-image: url(../assets/home-image.png) ;
-    background-size: cover
-}
-
-h1 {
-    padding-top:170px; ;
-    font-size: 40px;
-    font-weight: bold;
-    color:#FFFFFF;
-}
-
-.title-bar-subtitle{
-    margin-left: 14.5px;
-}
-.title-bar-subtitle h2 {
-    font-size: 20px;
-    color:#FFFFFF;
-}
-
-.paragraphs {
-    width: 366px;
-    padding-top: 98px;
-    font-size: 16px;
-    color: #FFFFFF;
-}
-.headers-paragraphs p {
-    margin-left: 14.5px;
-    padding-bottom: 45px;
-}
 .headers-paragraphs{
     width: 481px;
     height: 900px;
     margin-left: 76px;
     background-color: rgba(0, 0, 0, .4);
     backdrop-filter: blur(3px);
+}
+
+.headers-paragraphs p {
+    margin-left: 14.5px;
+    padding-bottom: 45px;
+}
+
+.title-bar-subtitle{
+    margin-left: 14.5px;
+}
+.title-bar-subtitle>h2 {
+    font-size: 20px;
+    text-align: left;
+    color:#FFFFFF;
 }
 
 #line-header{ 
@@ -46,3 +27,16 @@ h1 {
     background-color: #AACE9B;
     margin-bottom: 17px;
 }
+
+.paragraphs-box {
+    width: 366px;
+    padding-top: 98px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: .75;
+    
+}
+
+

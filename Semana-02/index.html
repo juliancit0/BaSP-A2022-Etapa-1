@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="css/style-body.css">
         <link rel="stylesheet" href="css/style-sidebar.css">
         <link rel="stylesheet" href="css/style-header.css">
+        <link rel="stylesheet" href="css/style-who-we-are.css">
+        <link rel="stylesheet" href="css/style-why-choose-us.css">
+        <link rel="stylesheet" href="css/style-functionalities.css">
+        <link rel="stylesheet" href="css/style-form.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -35,16 +39,16 @@
                 <p>Contact us</p>
                 <div id="line-cu"></div>
                 <div class="all-icons-info">
-                    <div class= "icon-info" id="mail">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>trackgenix@gmail.com</p>
+                    <div class= "icon-info">
+                        <i class="fa-solid fa-envelope" id="icon-mail"></i>
+                        <p id="mail">trackgenix@gmail.com</p>
                     </div>
                     <div class= "icon-info">
-                        <i class="fa-solid fa-phone"></i>
-                        <p>(000) 000-0000</p>
+                        <i class="fa-solid fa-phone" id="icon-phone"></i>
+                        <p id="phone">(000) 000-0000</p>
                     </div>
                     <div class= "icon-info">
-                        <i id="icon-city" class="fa-solid fa-city"></i>
+                        <i class="fa-solid fa-city" id="icon-city" ></i>
                         <p id="address">
                             1234 Somewhere Road #8254
                             Nashville,TN 00000-0000
@@ -62,7 +66,7 @@
                         By GigaTech Software Solutions SA
                     </h2>
                 </div>
-                <div class="paragraphs">
+                <div class="paragraphs-box">
                     <p> 
                         The company GigaTech Software Solutions SA provides software
                         development services to other companies, which have too many employees. 
@@ -77,35 +81,36 @@
             </div>
         </header>
         <main>
-            <section>
+            <section id="who-we-are">
                 <h2>Who we are</h2>
-                <div>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                        an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                        an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                        has been the industry's standard dummy text ever since the 1500s, when
-                        an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                        an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                        an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                </div>
+                <div class="grey-line"></div>
+                <p id="blue-paragraph">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                    an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                    an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy text ever since the 1500s, when
+                    an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <p id="green-paragraph">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                    an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                    an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
             </section>
-            <section>
+            <section id="why-choose-us">
                 <h2>Why choose us?</h2>
-                <div>
-                    <div>
+                <div class="grey-line"></div>
+                <div class="box">
+                    <div class="text-box-left">
                         <h3>Productivity Booster</h3>
+                        <div class="line-next-image"></div>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -114,7 +119,7 @@
                     </div>
                     <img src="assets/productivity-booster.png" alt="people with statistics">
                 </div>
-                <div>
+                <div class="box">
                     <div>
                         <h3>Work Traceability</h3>
                         <p>
@@ -125,9 +130,10 @@
                     </div>
                     <img src="assets/work-traceability.png" alt="girl working">
                 </div>
-                <div>
-                    <div>
+                <div class="box">
+                    <div class="text-box-left">
                         <h3>Leadership and team management</h3>
+                        <div class="line-next-image"></div>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -137,7 +143,7 @@
                     <img src="assets/leadership-tm.png" alt="man guiding people">
                 </div>
                 <div>
-                    <div>
+                    <div class="box">
                         <h3>Decision making</h3>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -148,8 +154,9 @@
                     <img src="assets/decision-making.png" alt="man making a decision">
                 </div>
             </section>
-            <section>
+            <section id="functionalities">
                 <h2>Functionalities</h2>
+                <div class="grey-line"></div>
                 <div>
                     <div>
                         <img src="assets/icons/functionalities/hourslog.png" alt="clock icon">
@@ -193,8 +200,9 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="form">
                 <h2>Contact</h2>
+                <div class="grey-line"></div>
                 <form>
                     <div>
                         <label>Name</label>
