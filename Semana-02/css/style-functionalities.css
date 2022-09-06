@@ -1,0 +1,40 @@
+#functionalities{
+    margin-top: 27px;
+}
+
+.functionalities-box {
+    display: inline-block;
+    width: 533px;
+    margin-right: 102px;
+    margin-bottom: 120px;
+}
+
+.functionalities-box h3 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.functionalities-box p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.44px;
+    margin-bottom: 20px;
+}
+
+.functionalities-box svg {
+    margin-right: 18px;
+    padding-bottom: 15px;
+    float: left;
+}
+
+#functionalities-line {
+    margin-bottom: 88px;
+}
+
+#correct-bottom-1,
+#correct-bottom-2 {
+    margin-bottom: 52.88px;
+}
+
