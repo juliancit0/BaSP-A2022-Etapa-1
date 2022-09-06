@@ -1,0 +1,92 @@
+#why-choose-us h2 {
+    padding-top: 130px;
+}
+
+
+.box-white {
+    display: inline-block;
+    width: 1400px;
+    margin: 168px 0px 220px 12px;
+}
+
+.text-box-left {
+    float: left;
+}
+
+#why-choose-us h3{
+    padding-top: 27px;
+}
+
+.text-box-left h3:hover,
+.text-box-right h3:hover{
+    color: #F13312;
+}
+
+.line-next-image {
+    width: 650px;
+    height: 4px;
+}
+
+.text-box-left p{
+    width: 650px;
+    padding-top: 60px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+
+#line-ni-1{
+    background-color: #286276;
+}
+
+
+.box-grey {
+    display: inline-block;
+    width: 1260px;
+    padding-top: 220px;
+    padding-bottom: 220px;
+    background-color: #D9D9D9;
+}
+
+.text-box-right {
+    float: right;
+}
+
+
+.text-box-right p {
+    width: 530px;
+    padding-top: 60px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+#line-ni-2,
+#line-ni-4 {
+    background-color: #fff;
+}
+
+#line-ni-2 {
+    width: 700px;
+    margin-left: -146px;
+}
+
+#line-ni-3 {
+    background-color: #D9D9D9;
+}
+
+#line-ni-4 {
+    width: 700px;
+    margin-left: -120px;
+}
+
+.box-grey img{
+    float: left;
+    margin: 12px;
+}
+
+
+#top-changed{
+    margin-top: 220px;
+}
