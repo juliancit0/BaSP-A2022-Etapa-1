@@ -1,15 +1,19 @@
 body {
-  width: 1440px;
-  height: 6864px;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  border: 1px solid black;
+    width: 1440px;
+    height: 6864px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
 }
 
 header, main, footer{
-  padding-left: 160px;
+    float: right;
 } 
 
-a{
-  text-decoration: none;
+h2 {
+    font-size: 40px;
 }
+
+a{
+    text-decoration: none;
+}
+
