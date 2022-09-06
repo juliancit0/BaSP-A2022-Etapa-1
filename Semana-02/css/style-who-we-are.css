@@ -1,0 +1,29 @@
+#who-we-are h2 {
+    padding-top: 100px;
+}
+
+#who-we-are .grey-line {
+    margin-bottom: 83px;
+}
+
+#blue-paragraph {
+    width: 1176px;
+    height: 206px;
+    margin-left: 57px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: #373867;
+}
+
+#green-paragraph {
+    width: 1176px;
+    margin-left: 57px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: #49A37B;
+
+}
