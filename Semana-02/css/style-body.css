@@ -21,7 +21,7 @@ aside i {
 }
 
 
-header{
+header {
     background-color: rgba(0, 0, 0, 0.3);
     background-image: url(../assets/home-image.png) ;
     background-size: cover
@@ -45,9 +45,6 @@ h3 {
     font-weight: bold;
 }
 
-
-
-
 a{
     text-decoration: none;
 }
@@ -56,7 +53,8 @@ header,
 #who-we-are,
 #why-choose-us,
 #functionalities,
-#form,
+#contact,
+#products-enterprise-support,
 footer {
     width: 1288px;
     float: right;

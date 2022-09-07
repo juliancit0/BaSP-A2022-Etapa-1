@@ -2,24 +2,22 @@
     padding-top: 130px;
 }
 
+#why-choose-us h3 {
+    padding-top: 27px;
+}
 
 .box-white {
     display: inline-block;
-    width: 1400px;
+    width: 1233px;
     margin: 168px 0px 220px 12px;
+}
+
+#top-changed {
+    margin-top: 220px;
 }
 
 .text-box-left {
     float: left;
-}
-
-#why-choose-us h3{
-    padding-top: 27px;
-}
-
-.text-box-left h3:hover,
-.text-box-right h3:hover{
-    color: #F13312;
 }
 
 .line-next-image {
@@ -27,19 +25,13 @@
     height: 4px;
 }
 
-.text-box-left p{
+.text-box-left p {
     width: 650px;
     padding-top: 60px;
     font-weight: 400;
     font-size: 30px;
     line-height: 35px;
 }
-
-
-#line-ni-1{
-    background-color: #286276;
-}
-
 
 .box-grey {
     display: inline-block;
@@ -49,10 +41,14 @@
     background-color: #D9D9D9;
 }
 
+.box-grey img {
+    float: left;
+    margin: 12px;
+}
+
 .text-box-right {
     float: right;
 }
-
 
 .text-box-right p {
     width: 530px;
@@ -60,6 +56,11 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 35px;
+}
+
+
+#line-ni-1 {
+    background-color: #286276;
 }
 
 #line-ni-2,
@@ -81,12 +82,7 @@
     margin-left: -120px;
 }
 
-.box-grey img{
-    float: left;
-    margin: 12px;
-}
-
-
-#top-changed{
-    margin-top: 220px;
+.text-box-left h3:hover,
+.text-box-right h3:hover {
+    color: #F13312;
 }
