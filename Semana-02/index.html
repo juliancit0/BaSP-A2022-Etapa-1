@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="css/style-who-we-are.css">
         <link rel="stylesheet" href="css/style-why-choose-us.css">
         <link rel="stylesheet" href="css/style-functionalities.css">
-        <link rel="stylesheet" href="css/style-form.css">
+        <link rel="stylesheet" href="css/style-contact.css">
+        <link rel="stylesheet" href="css/style-products-enterprise-support.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -228,18 +229,13 @@
                     </div>
                 </div>
             </section>
-            <section id="form">
+            <section id="contact">
                 <h2>Contact</h2>
                 <div class="grey-line"></div>
                 <form>
-                    <div>
+                    <div class="box-input">
                         <label>Name</label>
                         <input type="text" placeholder="Your Name Here">
-                    </div>
-                    <div>
-                        <label>Email</label>
-                        <input type="mail" placeholder="Your Email Here">
-                    </div>
                         <select>
                             <option value="" disabled selected hidden>Contact Area</option>
                             <option value="human-resources">Human Resources</option>
@@ -247,17 +243,25 @@
                             <option value="commercialization">Commercialization</option>
                         </select>
                     <div>
+                    <div>
+                        <label>Email</label>
+                        <input type="mail" placeholder="Your Email Here">
+                    
                         <label>Message</label>
                         <textarea name="message" placeholder="Your Message Here"></textarea>
                     </div>
-                    <div>
-                        <button type="submit">Send Message</button>
-                        <button type="reset">Reset</button>
+                    <div class="buttons">
+                        <button type="submit" id="send-message">
+                            <i class="fa-regular fa-envelope"></i>Send Message
+                        </button>
+                        <button type="reset" id="reset">
+                            <i class="fa-solid fa-x"></i>Reset
+                        </button>
                     </div>
                 </form>
             </section>
-            <section>
-                <div>
+            <section id="products-enterprise-support">
+                <div id="products">
                     <h3>Products</h3>
                     <ol>
                         <li>Features</li>
@@ -266,7 +270,7 @@
                         <li>Additional features</li>
                     </ol>
                 </div>
-                <div>
+                <div id="enterprise">
                     <h3>Enterprise</h3>
                     <ol>
                         <li>About us</li>
@@ -275,7 +279,7 @@
                         <li>Blog</li>
                     </ol>
                 </div>
-                <div>
+                <div id="support">
                     <h3>Support</h3>
                     <ol>
                         <li>Help</li>
@@ -284,7 +288,6 @@
                         <li>Contact</li>
                     </ol>
                 </div>
-                <img src="assets/background-prefooter.png" alt="background">
             </section>
         </main>
         <footer>

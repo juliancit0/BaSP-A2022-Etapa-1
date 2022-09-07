@@ -1,0 +1,89 @@
+#contact {
+    margin-top: 30px;
+}
+
+form label{
+    display: block;
+    margin: 34px 0px 7px 56px;
+    color: #373867;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: 450px;
+    height: 37px;
+    margin-right: 133px;
+    margin-left: 56px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    
+}
+
+select {
+    width: 446px;
+    height: 42px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+
+.box-input {
+    display: inline-block;
+}
+
+textarea {
+    width: 1029px;
+    height: 180px;
+    margin-left: 56px;
+    margin-bottom: 16px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+::placeholder {
+    color: #373867;
+    opacity: .5 ; 
+    font-family: "Roboto", sans-serif;
+  }
+
+select {
+    color: #373867;
+    opacity: .5 ;
+}  
+
+select option {
+    color: #373867;
+  }
+
+
+.buttons {
+    margin-left: 56px;
+}
+
+.buttons i {
+    margin-right: 10px;
+}
+
+#send-message {
+    width: 177px;
+    height: 48px;
+    background: #AACE9B;
+    border-radius: 5px;
+    color: #373867;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#reset-button {
+    width: 117px;
+    height: 48px;
+    float: right;
+    background: #F13312;
+    border-radius: 5px;
+    color: #373867;
+    font-weight: bold;
+    font-size: 15px;
+}

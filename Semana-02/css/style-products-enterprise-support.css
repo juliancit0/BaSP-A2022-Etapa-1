@@ -1,0 +1,46 @@
+#products-enterprise-support {
+    display: inline;
+    width: 1288px;
+    height: 247px;
+    padding-top: 63px;
+    background-image: url(../assets/background-prefooter.png) ;
+    background-size: cover
+}
+
+
+#products-enterprise-support h3 {
+    font-size: 20px;
+    color: #373867;
+}
+
+#products-enterprise-support h3:hover {
+    color: #F13312;
+}
+
+
+#products-enterprise-support ol {
+    padding-top: 22px;
+    padding-left: 14px;
+    font-size: 12px;
+    color: #373867;
+    list-style-type: decimal
+}
+
+
+#products {
+    width:126px;
+    margin-right: 121px;
+    margin-left: 323px;
+    float:left;
+}
+
+#enterprise {
+    width: 94px;
+    float:left;
+    margin-right: 131px;
+}
+
+#support {
+    width:81px;
+    float: left;
+}
