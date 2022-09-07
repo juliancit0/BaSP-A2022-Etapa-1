@@ -1,0 +1,33 @@
+footer {
+    width: 1288px;
+    height: 176px;
+    background-color: #AACE9B;
+}
+
+footer i{
+    margin: 35px 50px 32px 0px;
+    font-size: 38px;
+    color: white;
+}
+
+footer h4,
+footer p{
+    font-size: 12px;
+}
+
+footer h4{
+    margin-left: 556px;
+    margin-bottom: 18px;
+}
+
+footer p{
+    margin-left: 466px;
+}
+
+footer i:hover {
+    color: #F13312;
+}
+
+.icons{
+    margin-left: 410px;
+}
