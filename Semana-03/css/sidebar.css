@@ -1,0 +1,87 @@
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(55, 56, 103, 0.4);
+    flex-grow: 1;
+}
+
+.sidebar-top img {
+    align-self: center;
+}
+
+.sidebar-top p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #373867;
+}
+
+.sidebar-top .trackgenix-back {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-middle {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 5;
+    align-self: center;
+}
+
+.sidebar-middle a,
+.sidebar-middle i {
+    color: rgb(243, 52, 19);
+}
+
+.sidebar-middle a:hover,
+.sidebar-middle i:hover {
+    color:#373867;
+}
+
+.sidebar-middle i {
+  padding-right: 10px;
+}
+
+.sidebar-bot > p {
+    margin-left: 11px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sidebar-bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: baseline;
+    flex-grow: 2;
+    border: solid 1px black;
+}
+
+.sidebar-bot .all-icons-info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 14px;
+}
+
+#line-cu {
+    width: 81px;
+    height: 1px;
+    background-color: rgb(243, 52, 19);
+    margin-left: 8px;
+}
+
+#icon-city,
+#icon-mail,
+#icon-phone {
+    font-size: 14px;
+}
+
+#mail,
+#phone,
+#address {
+    width: 110px;
+    float: right;
+}
+
