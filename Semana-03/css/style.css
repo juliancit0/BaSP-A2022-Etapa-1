@@ -6,8 +6,7 @@ body {
 }
 
 aside {
-    display: flex;
-    flex-direction: column;
+    display: none;
     width: 10%;
     height: 100%;
     min-width: 160px;
@@ -34,7 +33,7 @@ a{
 #header-main-footer {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     overflow: scroll;
 }
 
@@ -68,12 +67,13 @@ footer {
 
 
 /* Media querys */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     aside {
-        display: none;
+        display: flex;
+        flex-direction: column;
     } }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     #header-main-footer {
-        width: 100%;
+        width: 90%;
     } }
