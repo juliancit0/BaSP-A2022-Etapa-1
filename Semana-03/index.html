@@ -166,10 +166,19 @@
                 </section>
                 <section id="functionalities">
                     <h2>Functionalities</h2>
-                    <div class="grey-line" id="functionalities-line"></div>
-                    <div>
-                        <div class="functionalities-box">
-                            <svg width="142" height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="grey-line"></div>
+                    <div class="container">
+                        <div class="box">
+                            <svg class="red-hover" width="142" height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <filter id="colorFilter">
+                                    <feColorMatrix
+                                    color-interpolation-filters="sRGB"
+                                    type="matrix"
+                                    values="0.95 0   0   0   0
+                                            0   0.20  0   0   0
+                                            0   0   0.07  0   0
+                                            0   0   0   1   0 "/>
+                                </filter>
                                 <rect x="2.82843" y="70.769" width="96" height="96" transform="rotate(-45.0493 2.82843 70.769)" stroke="black" stroke-width="4"/>
                                 <circle cx="71.5" cy="69.5" r="25.5" stroke="black" stroke-width="4"/>
                                 <line x1="71" y1="59" x2="71" y2="71" stroke="black" stroke-width="4" stroke-linecap="round"/>
@@ -183,8 +192,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="functionalities-box" >
-                            <svg width="142" height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="box" >
+                            <svg class="red-hover" width="142" height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="2.82843" y="70.769" width="96" height="96" transform="rotate(-45.0493 2.82843 70.769)" fill="#D2D2D2" fill-opacity="0.01" stroke="black" stroke-width="4"/>
                                 <circle cx="61.2472" cy="72.5719" r="21.2472" stroke="black" stroke-width="4"/>
                                 <path d="M64.9668 94.4243C77.7528 96.2842 89.3764 84.7137 89.3764 71.8746C89.3764 59.0355 76.5904 47.93 64.9668 50.487" stroke="black" stroke-width="4"/>
@@ -202,8 +211,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="functionalities-box" id="correct-bottom-1">
-                            <svg width="142" height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="box" id="correct-bottom-1">
+                            <svg class="red-hover" width="142" height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="2.82843" y="70.769" width="96" height="96" transform="rotate(-45.0493 2.82843 70.769)" stroke="black" stroke-width="4"/>
                                 <circle cx="57.4172" cy="55.4447" r="6.72379" stroke="black" stroke-width="4"/>
                                 <circle cx="89.7276" cy="61.9068" r="4.78517" stroke="black" stroke-width="4"/>
@@ -218,8 +227,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="functionalities-box" id="correct-bottom-2">
-                            <svg width="142" height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="box" id="correct-bottom-2">
+                            <svg class="red-hover" width="142" height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="2.82843" y="70.769" width="96" height="96" transform="rotate(-45.0493 2.82843 70.769)" stroke="black" stroke-width="4"/>
                                 <circle cx="57.4172" cy="55.4447" r="6.72379" stroke="black" stroke-width="4"/>
                                 <circle cx="89.7276" cy="61.9068" r="4.78517" stroke="black" stroke-width="4"/>
@@ -240,19 +249,28 @@
                     <h2>Contact</h2>
                     <div class="grey-line"></div>
                     <form>
-                        <div class="box-input">
-                            <label>Name</label>
-                            <input type="text" placeholder="Your Name Here">
-                            <select>
-                                <option value="" disabled selected hidden>Contact Area</option>
-                                <option value="human-resources">Human Resources</option>
-                                <option value="systems">Systems</option>
-                                <option value="commercialization">Commercialization</option>
-                            </select>
+                        <div class="container">
+                            <div class="box">
+                                <div class="title">
+                                    <label>Name</label>
+                                    <input type="text" placeholder="Your Name Here">
+                                </div>
+                                <div class="title">
+                                    <label>Email</label>
+                                    <input type="mail" placeholder="Your Email Here">
+                                </div>
+                            </div>
+                            <div class="title" id="title-area">
+                                <label class="white hidden"> Area </label>
+                                <select>
+                                    <option value="" disabled selected hidden>Contact Area</option>
+                                    <option value="human-resources" class="grayish-navy">Human Resources</option>
+                                    <option value="systems" class="grayish-navy">Systems</option>
+                                    <option value="commercialization" class="grayish-navy">Commercialization</option>
+                                </select>
+                            </div>
                         </div>
                         <div>
-                            <label>Email</label>
-                            <input type="mail" placeholder="Your Email Here">
                             <label>Message</label>
                             <textarea name="message" placeholder="Your Message Here"></textarea>
                         </div>
@@ -267,32 +285,34 @@
                     </form>
                 </section>
                 <section id="products-enterprise-support">
-                    <div id="products">
-                        <h3>Products</h3>
-                        <ol>
-                            <li>Features</li>
-                            <li>Downloads</li>
-                            <li>Integrations</li>
-                            <li>Additional features</li>
-                        </ol>
-                    </div>
-                    <div id="enterprise">
-                        <h3>Enterprise</h3>
-                        <ol>
-                            <li>About us</li>
-                            <li>Clients</li>
-                            <li>Resources</li>
-                            <li>Blog</li>
-                        </ol>
-                    </div>
-                    <div id="support">
-                        <h3>Support</h3>
-                        <ol>
-                            <li>Help</li>
-                            <li>Tutorials</li>
-                            <li>API</li>
-                            <li>Contact</li>
-                        </ol>
+                    <div class="container">
+                        <div id="products"  class="grayish-navy">
+                            <h3>Products</h3>
+                            <ol>
+                                <li>Features</li>
+                                <li>Downloads</li>
+                                <li>Integrations</li>
+                                <li>Additional features</li>
+                            </ol>
+                        </div>
+                        <div id="enterprise"  class="grayish-navy">
+                            <h3>Enterprise</h3>
+                            <ol>
+                                <li>About us</li>
+                                <li>Clients</li>
+                                <li>Resources</li>
+                                <li>Blog</li>
+                            </ol>
+                        </div>
+                        <div id="support"  class="grayish-navy">
+                            <h3>Support</h3>
+                            <ol>
+                                <li>Help</li>
+                                <li>Tutorials</li>
+                                <li>API</li>
+                                <li>Contact</li>
+                            </ol>
+                        </div>
                     </div>
                 </section>
             </main>

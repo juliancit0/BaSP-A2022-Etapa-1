@@ -73,6 +73,169 @@
     filter: invert(100%) url(#colorFilter);
   }
 
+/* Contact form */
 
+#contact {
+    margin-top: 30px;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    color: #373867;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: 90%;
+    height: 37px;
+    min-width: 250px;
+    max-width: 400px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+
+select {
+    width: 90%;
+    min-width: 256px;
+    max-width: 412px;
+    height: 41px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    color: #373867;
+    opacity: .5 ;
+}
+
+textarea {
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+#contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#contact .box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+form .container .title {
+    flex-grow: 1;
+}
+
+#title-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hidden {
+    display: none;
+}
+#container .box .title{
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#contact .box .title{
+    width: 100%;
+}
+
+#contact .buttons i {
+    margin-right: 10px;
+}
+
+#send-message {
+    width: 120px;
+    height: 48px;
+    margin-bottom: 56px;
+    background: #AACE9B;
+    border-radius: 5px;
+    color: #373867;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#reset {
+    width: 117px;
+    height: 48px;
+    background: #F13312;
+    border-radius: 5px;
+    color: #373867;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+::placeholder {
+    color: #373867;
+    opacity: .5 ;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Products, enterprise and support */
+
+#products-enterprise-support {
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/background-prefooter.png) ;
+    background-size: cover
+}
+
+#products-enterprise-support h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+#products-enterprise-support ol {
+    margin-left: 10px;
+    font-size: 10px;
+    line-height: 12px;
+    list-style-type: decimal;
+}
+
+
+#products-enterprise-support .container {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 40%;
+}
+
+#products,
+#enterprise,
+#support {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#products {
+    min-width: 126px;
+}
+
+#enterprise {
+    min-width: 94px;
+}
+#support {
+    min-width: 81px;
+}
 
 

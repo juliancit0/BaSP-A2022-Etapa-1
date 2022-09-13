@@ -21,9 +21,9 @@ h2 {
 
 h2,
 h3 {
-    font-weight: 700px;
-    font-size: 40px;
-    font-weight: bold;
+font-weight: 600px;
+font-size: 30px;
+font-weight: bold;
 }
 
 a{
@@ -42,7 +42,6 @@ header,
 #why-choose-us,
 #functionalities,
 #contact,
-#products-enterprise-support,
 footer {
     display: flex;
     flex-direction: column;
@@ -51,7 +50,7 @@ footer {
 /* Lines */
 .grey-line {
     width: 95%;
-    height: 10px;
+    height: 5px;
     margin: 1vh 0vh 1vh 0vh ;
     background-color: #D9D9D9;
 }
@@ -65,15 +64,107 @@ footer {
     color: #49A37B;
 }
 
+.white {
+    color: #FFF;
+}
 
 /* Media querys */
+@media screen and (min-width: 480px) {
+    #contact .container {
+        flex-wrap:nowrap;
+    }
+
+    #title-area {
+        align-items: flex-end;
+    }
+    .hidden {
+        display: flex;
+    }
+
+    #functionalities .container .box  {
+        display: flex;
+        width: 49%;
+    }
+    #functionalities svg {
+        width: 80%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .grey-line {
+        height: 7px;
+    }
+
+    #who-we-are .box {
+        margin-top: 84px;
+    }
+    #who-we-are p {
+        font-size: 20px;
+        font-weight: 500px;
+        line-height: 30px;
+        margin-bottom: 100px;
+    }
+
+    #products-enterprise-support .container{
+        margin-top: 64px;
+        margin-bottom: 74px;
+    }
+
+    #products-enterprise-support h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    #products-enterprise-support ol {
+        margin-left: 12px;
+        font-size: 12px;
+        line-height: 14px
+    }
+    #functionalities .container .box  p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23.44px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
+    .grey-line {
+        height: 10px;
+    }
     aside {
         display: flex;
         flex-direction: column;
-    } }
-
-@media screen and (min-width: 1024px) {
+    }
     #header-main-footer {
         width: 90%;
-    } }
+    }
+    #functionalities .container .box {
+        margin-top: 88px;
+    }
+    #functionalities .container :nth-child(3),
+    #functionalities .container :nth-child(4){
+        margin-bottom: 60px;
+    }
+
+    #functionalities .container .box  h3 {
+        font-weight: 700px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #functionalities svg {
+        width: 40%;
+    }
+}
+
+
+
+/* Hovers */
+
+.sidebar-middle a:hover{
+    color:#373867;
+}
+
+#products-enterprise-support h3:hover {
+    color: #F13312;
+}
