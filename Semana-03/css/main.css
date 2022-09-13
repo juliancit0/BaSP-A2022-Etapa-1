@@ -1,5 +1,3 @@
-
-
 /* Who whe are */
 #who-we-are {
     display: flex;
@@ -37,15 +35,44 @@
     margin-bottom: 20px;
 }
 
-
-@media screen and (min-width: 768px) {
-    #who-we-are .box {
-        margin-top: 84px;
-    }
-    #who-we-are p {
-        font-size: 20px;
-        font-weight: 500px;
-        line-height: 30px;
-        margin-bottom: 100px;
-    }
+/* Functionalities */
+#functionalities svg {
+    width: 60%;
 }
+
+#functionalities {
+    margin-top: 30px;
+    align-items: center;
+}
+
+#functionalities .container{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    min-width: 300px;
+}
+#functionalities .container .box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center ;
+}
+
+#functionalities .container .box  h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+#functionalities .container .box  p {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.red-hover:hover {
+    filter: invert(100%) url(#colorFilter);
+  }
+
+
+
+

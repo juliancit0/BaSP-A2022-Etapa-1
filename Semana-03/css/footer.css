@@ -1,6 +1,7 @@
 footer {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     background-color: #AACE9B;
 }
@@ -8,6 +9,7 @@ footer {
 footer h4,
 footer p {
     font-size: 10px;
+    margin-bottom: 12px;
 }
 
 footer i {
@@ -17,11 +19,11 @@ footer i {
 
 footer .icons {
     display: flex;
-    width: 60%;
+    width: 50%;
     justify-content: space-around;
     font-size: 28px;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     border: #000 1px;
 }
 
@@ -36,13 +38,16 @@ footer i:hover {
     color: #F13312;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
     footer .icons {
+        width: 30%;
         font-size: 38px;
     }
-
+}
+@media screen and (min-width: 480px) {
     footer p,
     footer h4 {
         font-size: 12px;
+        margin-bottom: 18px;
     }
 }
