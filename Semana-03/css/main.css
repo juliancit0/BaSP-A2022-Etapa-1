@@ -2,7 +2,6 @@
 #who-we-are {
     display: flex;
     flex-direction: column;
-    max-height: 800px;
     justify-content: space-around;
     align-items: center;
 }
@@ -30,12 +29,61 @@
 #who-we-are p {
     text-align: center;
     font-size: 14px;
-    font-weight: 500px;
     line-height: 20px;
     margin-bottom: 20px;
 }
 
+/* Why choose us */
+
+#why-choose-us {
+    align-items: center;
+    width: 100%;
+}
+
+#why-choose-us .text-image {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+#why-choose-us .box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-box .title-bar {
+   width: 50%;
+}
+
+
+.box img {
+    height: auto;
+    width: 100%;
+    flex-shrink: 2;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#why-choose-us p {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.line-next-image {
+    height: 3px;
+    width: 100%;
+}
+
+
 /* Functionalities */
+
 #functionalities svg {
     width: 60%;
 }
@@ -201,9 +249,9 @@ form .container .title {
 }
 
 ::placeholder {
+    font-family: "Roboto", sans-serif;
     color: #373867;
     opacity: .5 ;
-    font-family: "Roboto", sans-serif;
 }
 
 /* Products, enterprise and support */
