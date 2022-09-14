@@ -194,6 +194,39 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    header h1 {
+        text-align: left;
+        font-size: 40px;
+        font-weight: bold;
+        color:#FFFFFF;
+        margin-bottom: 4px;
+    }
+    header h2 {
+        font-size: 20px;
+        font-weight: normal;
+        text-align: left;
+        color:#FFFFFF;
+    }
+    header .title-bar-subtitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin: 10px;
+    }
+    header .container {
+        margin-left:15%;
+        width: 40%;
+    }
+    header .container .paragraphs-box p {
+        text-align: left;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FFFFFF;
+        opacity: .75;
+    }
     #header-main-footer {
         width: 90%;
     }
