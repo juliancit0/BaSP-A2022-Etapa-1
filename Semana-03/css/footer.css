@@ -33,21 +33,3 @@ footer .box {
     justify-content: space-around;
     text-align: center;
 }
-
-footer i:hover {
-    color: #F13312;
-}
-
-@media screen and (min-width: 768px) {
-    footer .icons {
-        width: 30%;
-        font-size: 38px;
-    }
-}
-@media screen and (min-width: 480px) {
-    footer p,
-    footer h4 {
-        font-size: 12px;
-        margin-bottom: 18px;
-    }
-}

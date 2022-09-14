@@ -56,11 +56,19 @@
    width: 50%;
 }
 
+.box {
+    display: flex;
+    align-items: center;
+}
 
 .box img {
     height: auto;
     width: 100%;
     flex-shrink: 2;
+}
+
+.box.grey img {
+    order:1;
 }
 
 .text-box {
@@ -93,7 +101,7 @@
     align-items: center;
 }
 
-#functionalities .container{
+#functionalities .container {
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -116,8 +124,6 @@
     font-size: 16px;
     line-height: 18px;
 }
-
-
 
 /* Contact form */
 
@@ -205,13 +211,13 @@ form .container .title {
 .hidden {
     display: none;
 }
-#container .box .title{
+#container .box .title {
     width: 100%;
     flex-grow: 1;
     flex-shrink: 1;
 }
 
-#contact .box .title{
+#contact .box .title {
     width: 100%;
 }
 
@@ -274,7 +280,6 @@ form .container .title {
     line-height: 12px;
     list-style-type: decimal;
 }
-
 
 #products-enterprise-support .container {
     display: flex;
