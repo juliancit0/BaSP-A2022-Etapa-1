@@ -69,13 +69,12 @@
     line-height: 18px;
 }
 
-.red-hover:hover {
-    filter: invert(100%) url(#colorFilter);
-  }
+
 
 /* Contact form */
 
 #contact {
+    justify-content: center;
     margin-top: 30px;
     align-items: center;
 }
@@ -89,33 +88,41 @@ form {
 form label {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-self: flex-start;
+    margin-top: 2%;
     color: #373867;
     font-weight: bold;
     font-size: 14px;
 }
 
 input {
-    width: 90%;
+    width: 100%;
     height: 37px;
     min-width: 250px;
     max-width: 400px;
+    margin-top: 2%;
     border: 1px solid #373867;
     border-radius: 4px;
 }
 
 select {
-    width: 90%;
+    width: 100%;
     min-width: 256px;
     max-width: 412px;
+    margin-top: 2%;
     height: 41px;
     border: 1px solid #373867;
     border-radius: 4px;
     color: #373867;
-    opacity: .5 ;
+    opacity: .7 ;
 }
 
 textarea {
+    flex-grow: 1;
+    min-width: 256px;
+    width: 100%;
+    height: 20vh;
     border: 1px solid #E0E0E0;
     border-radius: 4px;
     font-weight: 400;
@@ -160,13 +167,20 @@ form .container .title {
     width: 100%;
 }
 
+#contact .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
 #contact .buttons i {
-    margin-right: 10px;
+    margin-right: 1%;
 }
 
 #send-message {
-    width: 120px;
-    height: 48px;
+    flex: 1 1 auto;
+    height: 4.5vh;
+    max-width: 200px;
     margin-bottom: 56px;
     background: #AACE9B;
     border-radius: 5px;
@@ -176,8 +190,9 @@ form .container .title {
 }
 
 #reset {
-    width: 117px;
-    height: 48px;
+    flex: 1 1 auto;
+    height: 4.5vh;
+    max-width: 180px;
     background: #F13312;
     border-radius: 5px;
     color: #373867;
@@ -237,5 +252,4 @@ form .container .title {
 #support {
     min-width: 81px;
 }
-
 

@@ -88,7 +88,17 @@ footer {
     #functionalities svg {
         width: 80%;
     }
-
+    input {
+        width: 90%;
+        height: 37px;
+        min-width: 250px;
+        max-width: 500px;
+    }
+    select {
+        width: 90%;
+        min-width: 256px;
+        max-width: 512px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -155,9 +165,10 @@ footer {
     #functionalities svg {
         width: 40%;
     }
+    form {
+        justify-content: center;
+    }
 }
-
-
 
 /* Hovers */
 
@@ -166,5 +177,13 @@ footer {
 }
 
 #products-enterprise-support h3:hover {
+    color: #F13312;
+}
+
+.red-hover:hover {
+    filter: invert(100%) url(#colorFilter);
+  }
+
+#functionalities .container .box  h3:hover {
     color: #F13312;
 }
