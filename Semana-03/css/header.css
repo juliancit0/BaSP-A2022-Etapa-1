@@ -30,7 +30,6 @@ header .container{
 header .container p {
     text-align: center;
     margin-bottom: 10px;
-    font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     color: #FFFFFF;
@@ -58,3 +57,38 @@ header .container p {
     width: 90%;
 }
 
+/* Media query */
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+
+    header h2 {
+        font-weight: normal;
+        text-align: left;
+    }
+
+    header .title-bar-subtitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin: 10px;
+    }
+
+    header .container {
+        margin-left:15%;
+        width: 40%;
+    }
+
+    header .container .paragraphs-box p {
+        text-align: left;
+        font-weight: 400;
+        font-size: 16px;
+        opacity: .75;
+    }
+}
