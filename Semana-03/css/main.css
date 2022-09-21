@@ -1,3 +1,55 @@
+/* Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+}
+
+
+input {
+    width: 100%;
+    height: 37px;
+    min-width: 200px;
+    max-width: 400px;
+    margin-top: 2%;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    min-width: 246px;
+    max-width: 412px;
+    margin-top: 2%;
+    height: 41px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    color: #373867;
+    opacity: .7 ;
+}
+
+textarea {
+    flex-grow: 1;
+    min-width: 256px;
+    width: 100%;
+    height: 20vh;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    margin-top: 2%;
+    color: #373867;
+    font-weight: bold;
+    font-size: 14px;
+}
+
 /* Who whe are */
 #who-we-are {
     display: flex;
@@ -40,6 +92,11 @@
     width: 100%;
 }
 
+#why-choose-us p {
+    font-size: 20px;
+    line-height: 20px;
+}
+
 #why-choose-us .text-image {
     display: flex;
     flex-wrap: wrap;
@@ -79,26 +136,19 @@
     align-items: center;
 }
 
-#why-choose-us p {
-    font-size: 20px;
-    line-height: 20px;
-}
-
 .line-next-image {
     height: 3px;
     width: 100%;
 }
 
-
 /* Functionalities */
-
-#functionalities svg {
-    width: 60%;
-}
-
 #functionalities {
     margin-top: 30px;
     align-items: center;
+}
+
+#functionalities svg {
+    width: 60%;
 }
 
 #functionalities .container {
@@ -106,7 +156,7 @@
     justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
-    min-width: 300px;
+    min-width: 260px;
 }
 #functionalities .container .box {
     display: flex;
@@ -131,57 +181,7 @@
     justify-content: center;
     margin-top: 30px;
     align-items: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 96%;
-}
-
-form label {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: flex-start;
-    margin-top: 2%;
-    color: #373867;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-input {
-    width: 100%;
-    height: 37px;
-    min-width: 250px;
-    max-width: 400px;
-    margin-top: 2%;
-    border: 1px solid #373867;
-    border-radius: 4px;
-}
-
-select {
-    width: 100%;
-    min-width: 256px;
-    max-width: 412px;
-    margin-top: 2%;
-    height: 41px;
-    border: 1px solid #373867;
-    border-radius: 4px;
-    color: #373867;
-    opacity: .7 ;
-}
-
-textarea {
-    flex-grow: 1;
-    min-width: 256px;
-    width: 100%;
-    height: 20vh;
-    border: 1px solid #E0E0E0;
-    border-radius: 4px;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 15px;
 }
 
 #contact .container {
@@ -189,6 +189,7 @@ textarea {
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 #contact .box {
@@ -208,9 +209,6 @@ form .container .title {
     align-items: flex-start;
 }
 
-.hidden {
-    display: none;
-}
 #container .box .title {
     width: 100%;
     flex-grow: 1;
@@ -231,33 +229,35 @@ form .container .title {
     margin-right: 1%;
 }
 
-#send-message {
+#title-button {
+    width: 100%;
+}
+
+#send-message,
+#reset {
     flex: 1 1 auto;
-    height: 4.5vh;
+    height: 5.5vh;
     max-width: 200px;
     margin-bottom: 56px;
     background: #AACE9B;
     border-radius: 5px;
-    color: #373867;
     font-weight: bold;
-    font-size: 15px;
+}
+
+#send-message {
+    max-width: 200px;
+    background: #AACE9B;
 }
 
 #reset {
-    flex: 1 1 auto;
-    height: 4.5vh;
     max-width: 180px;
     background: #F13312;
-    border-radius: 5px;
-    color: #373867;
-    font-weight: bold;
-    font-size: 15px;
 }
 
 ::placeholder {
     font-family: "Roboto", sans-serif;
     color: #373867;
-    opacity: .5 ;
+    opacity: .5;
 }
 
 /* Products, enterprise and support */
@@ -265,13 +265,13 @@ form .container .title {
 #products-enterprise-support {
     display: flex;
     justify-content: center;
-    background-image: url(../assets/background-prefooter.png) ;
-    background-size: cover
+    background-image: url(../assets/background-prefooter.png);
+    background-size: cover;
 }
 
 #products-enterprise-support h3 {
-    font-size: 18px;
-    margin-bottom: 18px;
+    font-size: 14px;
+    margin-bottom: 16px;
 }
 
 #products-enterprise-support ol {
@@ -295,14 +295,146 @@ form .container .title {
     margin: 10px;
 }
 
-#products {
-    min-width: 126px;
-}
-
-#enterprise {
-    min-width: 94px;
-}
+#products,
+#enterprise,
 #support {
-    min-width: 81px;
+    min-width: 80px;
 }
 
+@media screen and (min-width: 480px) {
+    input {
+        width: 90%;
+        height: 37px;
+        min-width: 220px;
+        max-width: 500px;
+    }
+
+    select {
+        width: 90%;
+        min-width: 226px;
+        max-width: 512px;
+    }
+
+    #why-choose-us .text-image {
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: left;
+        margin: 20px;
+    }
+
+    #why-choose-us .box img {
+        display: flex;
+        flex: 1 1 0;
+        height: auto;
+        max-width: 40%;
+    }
+
+    #why-choose-us .text-box .title-bar {
+        width: 100%;
+    }
+
+    .box.grey img {
+        order: -1;
+    }
+
+    #contact .container {
+        flex-wrap: nowrap;
+    }
+
+    #title-area {
+        align-items: flex-end;
+    }
+
+    .hidden {
+        display: flex;
+    }
+
+    #functionalities .container .box  {
+        display: flex;
+        width: 49%;
+    }
+
+    #functionalities svg {
+        width: 80%;
+    }
+
+    #products-enterprise-support h3 {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #who-we-are .box {
+        margin-top: 84px;
+    }
+
+    #who-we-are p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 100px;
+    }
+
+    #why-choose-us .text-box {
+        height: 50%;
+    }
+
+    .grey-line {
+        height: 7px;
+    }
+
+    .box.grey p,
+    .box.grey h3{
+        margin-left: 40px;
+    }
+
+    #products-enterprise-support .container{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    #products-enterprise-support h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    #products-enterprise-support ol {
+        margin-left: 12px;
+        font-size: 12px;
+        line-height: 14px
+    }
+
+    #functionalities .container .box  p {
+        font-size: 20px;
+        line-height: 23.44px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    form {
+        justify-content: center;
+    }
+
+    .grey-line {
+        height: 10px;
+    }
+
+    #why-choose-us p {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    #functionalities .container .box {
+        margin-top: 88px;
+    }
+
+    #functionalities .container :nth-child(3),
+    #functionalities .container :nth-child(4){
+        margin-bottom: 60px;
+    }
+
+    #functionalities svg {
+        width: 40%;
+    }
+}
