@@ -1,0 +1,134 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    margin:1%;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 25px;
+}
+
+legend{
+    width: 50%;
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+#sign-up-body .container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 70%;
+}
+
+#sign-up-body h1 {
+    margin: 0px;
+    text-align: center;
+}
+#sign-up-body h2 {
+    margin: 0px;
+    text-align: right;
+}
+
+.first-column {
+    display: none;
+}
+
+.second-column {
+    display: flex;
+    width: 70%;
+}
+
+.second-column label {
+    width: 50%;
+}
+
+.second-column .box{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: flex-start;
+}
+
+.second-column input {
+    width: 100%;
+    padding: 0px;
+    min-width: 25px;
+}
+
+#log-in {
+    align-self:center;
+    margin-top: 2%;
+    margin-bottom: 0px;
+    width: 25%;
+    max-width: 1000px;
+    border: 1px;
+}
+
+.text-show {
+    display: flex;
+    max-width: 150px;
+}
+
+.text-show input {
+    justify-self: flex-end;
+    max-height: 14px ;
+}
+
+.text-show label {
+    width: auto;
+}
+
+#show-password {
+    max-width: 3px;
+}
+
+#button-anchors {
+    display: flex;
+}
+
+.error {
+    border: 1px solid #F33413;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.error-message,
+#mail-error-message,
+#password-error-message {
+    color: #F33413;
+}
+
+@media screen and (min-width: 1024px){
+    main {
+        width: 88%;
+        align-items:stretch;
+    }
+
+    .first-column {
+        display: flex;
+        flex-basis: 50%;
+        background-image: url(../assets/login-img.png);
+        background-size: cover;
+        border-radius: 25px;
+    }
+
+    #sign-up-body .container {
+        width: 50%;
+        max-width: 500px;
+    }
+}
