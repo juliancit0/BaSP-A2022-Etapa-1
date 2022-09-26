@@ -28,6 +28,10 @@ fieldset {
 
 #login-body h1 {
     margin: 0px;
+    text-align: center;
+}
+#login-body h2 {
+    margin: 0px;
     text-align: right;
 }
 
@@ -54,7 +58,7 @@ fieldset {
 .second-column input {
     width: 100%;
     padding: 0px;
-    min-width: 100px;
+    min-width: 25px;
 }
 
 #log-in {
@@ -64,6 +68,35 @@ fieldset {
     width: 25%;
     max-width: 1000px;
     border: 1px;
+}
+
+#test {
+    display: flex;
+    max-width: 150px;
+}
+
+#test input {
+    justify-self: flex-end;
+    max-height: 14px ;
+}
+
+#test label {
+    width: auto;
+}
+
+#show-password{
+    max-width: 3px;
+}
+
+.error {
+    border: 1px solid #F33413;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+#mail-error-message,
+#password-error-message {
+    color: #F33413;
 }
 
 @media screen and (min-width: 1024px){

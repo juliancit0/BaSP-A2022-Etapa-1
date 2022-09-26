@@ -17,6 +17,7 @@
         rel="stylesheet">
         <title>Trackgenix</title>
         <script src="https://kit.fontawesome.com/d7c9d962f7.js" crossorigin="anonymous"></script>
+        <script src="../javascript/login.js" type="module"></script>
     </head>
     <body id="login-body">
         <aside>
@@ -74,47 +75,26 @@
         <main>
             <div class="first-column grayish-navy-background"></div>
             <form action="submit" class="second-column">
+                <h1>Trackgenix</h1>
                 <div class="container">
                     <fieldset>
-                            <h1 class="grayish-navy">Login</h1>
-                            <div class="box">
+                            <h2 class="grayish-navy">Login</h2>
+                            <div class="box" id="input-label-mail">
                                 <label for="email">Email</label>
-                                <input type="text" name="email" id="email">
+                                <input type="text" name="email" id="email" placeholder="Email" autocomplete="on">
                             </div>
-                            <div class="box">
+                            <div class="box" id="input-label-password">
                                 <label for="password">Password</label>
-                                <input type="password" id="password">
+                                <input type="password" id="password" placeholder="Password" autocomplete="on">
                             </div>
-                                <button class="grayish-navy-background white"
-                                id="log-in">Log in</button>
+                            <div id="test">
+                                <label for="show-password"> Show password</label>
+                                <input type="checkbox" id="show-password">
+                            </div>
+                                <button class="grayish-navy-background white" value="send" id="log-in">Log in</button>
                     </fieldset>
                 </div>
             </form>
         </main>
-        <!-- <footer>
-            <div class="icons">
-                <a href="https://www.linkedin.com" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.twitter.com" target="_blank">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.github.com" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
-            <div class="box">
-                <h4>Rosario, Argentina</h4>
-                <p>
-                    Copyright © 2022 Radium Rocket. All rights reserved
-                </p>
-            </div>
-        </footer> -->
     </body>
 </html>
