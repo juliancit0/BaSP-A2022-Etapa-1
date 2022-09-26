@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2,
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h4 {
+font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+p {
+    font-size: 15px;
+}
+
+#header-main-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: scroll;
+}
+
+header,
+#who-we-are,
+#why-choose-us,
+#functionalities,
+#contact,
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    position: fixed;
+    margin-top: 1%;
+    margin-left: 0.7%;
+    padding: 4px;
+    border: solid 1px #F13312;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* Lines */
+.grey-line {
+    width: 95%;
+    height: 5px;
+    margin: 1vh 0vh 1vh 0vh ;
+    background-color: #D9D9D9;
+}
+
+/* Colours */
+.grayish-navy {
+    color: #373867;
+}
+
+.grayish-navy-background {
+    background-color:#373867;
+}
+
+.grayish-green {
+    color: #49A37B;
+}
+
+.white {
+    color: #FFF;
+}
+
+.white-background {
+    background-color: #FFF;
+}
+
+.grey {
+    background-color: #D9D9D9;
+}
+
+.red {
+    color:#F13312;
+}
+
+
+
+/* Hovers */
+
+.sidebar-middle a:hover{
+    color:#373867;
+}
+
+#products-enterprise-support h3:hover,
+#functionalities .container .box  h3:hover,
+footer i:hover
+{
+    color: #F13312;
+}
+
+.red-hover:hover {
+    filter: invert(100%) url(#color-filter);
+  }
+
+/* Media query */
+@media screen and (min-width: 1024px){
+    #header-main-footer {
+        width: 88%;
+    }
+
+    #menu {
+        display: none;
+    }
+}
