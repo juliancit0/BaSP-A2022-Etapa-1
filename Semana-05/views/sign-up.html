@@ -17,7 +17,7 @@
         rel="stylesheet">
         <title>Trackgenix</title>
         <script src="https://kit.fontawesome.com/d7c9d962f7.js" crossorigin="anonymous"></script>
-        <script src="../javascript/login.js" type="module"></script>
+        <script src="../javascript/sign-up.js" type="module"></script>
     </head>
     <body id="sign-up-body">
         <aside>
@@ -80,43 +80,43 @@
                     <div class="container">
                         <fieldset>
                             <h2 class="grayish-navy">Create account</h2>
-                            <div class="box" id="name-label-mail">
+                            <div class="box" id="input-name">
                                 <label for="name">Name</label>
-                                <input type="text" name="name" id="" placeholder="Name" autocomplete="on">
+                                <input type="text" name="name" id="name" placeholder="Name" autocomplete="on">
                             </div>
-                            <div class="box">
+                            <div class="box" id="input-last-name">
                                 <label for="last-name">Last Name</label>
                                 <input type="text" name="last-name" id="last-name" placeholder="Last name"
                                 autocomplete="on">
                             </div>
-                            <div class="box">
+                            <div class="box" id="input-dni">
                                 <label for="dni">DNI</label>
                                 <input type="text" name="dni" id="dni" placeholder="DNI"
                                 autocomplete="on">
                             </div>
-                            <div class="box">
-                                <label for="dni">Date of birth</label>
-                                <input type="text" name="date-of-birth" id="date-of-birth" placeholder="Date of birth"
+                            <div class="box" id="input-date">
+                                <label for="date">Date of birth</label>
+                                <input type="text" name="date" id="date" placeholder="Date of birth"
                                 autocomplete="on">
                             </div>
-                            <div class="box">
+                            <div class="box" id="input-phone">
                                 <label for="phone">Phone</label>
                                 <input type="text" name="phone" id="phone" placeholder="Phone"
                                 autocomplete="on">
                             </div>
-                            <div class="box">
+                            <div class="box" id="input-address">
                                 <label for="address-input">Addres</label>
-                                <input type="text" name="add" id="phone" placeholder="Phone"
+                                <input type="text" name="add" id="address-input" placeholder="Phone"
                                 autocomplete="on">
                             </div>
-                            <div class="box">
+                            <div class="box" id="input-locality">
                                 <label for="locality">Locality</label>
                                 <input type="text" name="locality" id="locality" placeholder="Locality"
                                 autocomplete="on">
                             </div>
-                            <div class="box">
-                                <label for="zip-code">Zip code</label>
-                                <input type="text" name="zip-code" id="zip-code" placeholder="Zip code"
+                            <div class="box" id="input-zip">
+                                <label for="zip">Zip code</label>
+                                <input type="text" name="zip" id="zip" placeholder="Zip code"
                                 autocomplete="on">
                             </div>
                             <div class="box" id="input-label-mail">
@@ -133,10 +133,13 @@
                                     <input type="checkbox" id="show-password">
                                 </div>
                                 <label for="password">Repeat password</label>
-                                <input type="password" id="repeat-password" placeholder="Repeat password" autocomplete="off">
+                                <input type="password" id="repeat-password" placeholder="Repeat password"
+                                autocomplete="off">
                             </div>
                             <div id="button-anchors">
-                                <button class="grayish-navy-background white" value="send" id="log-in">Log in</button>
+                                <button class="grayish-navy-background white" value="send" id="sign-up">
+                                    Create account
+                                </button>
                                 <div class="box">
                                     <a href="../views/login.html">Already have an account? Log in</a>
                                 </div>

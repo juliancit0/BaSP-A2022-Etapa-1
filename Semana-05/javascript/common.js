@@ -25,4 +25,23 @@ function checkPassword (password) {
 
 }
 
-export {checkEmail, checkPassword};
+function showErrorOnBlur(check, inputType, errorType, errorTag, box) {
+    if (!check(inputType.value)) {
+        inputType.classList.add('error');
+        var errorType = document.createElement('p');
+        errorType.innerText = 'Invalid format.';
+        errorType.id = errorTag;
+        document.getElementById(box).appendChild(errorType);
+    }
+    else {
+        inputType.classList.remove('error');
+    }
+}
+
+function deleteErrorOnFocus (errorId) {
+    if (document.getElementById(errorId) != null){
+        document.getElementById(errorId).remove();
+    }
+}
+
+export {checkEmail, checkPassword, showErrorOnBlur, deleteErrorOnFocus};
