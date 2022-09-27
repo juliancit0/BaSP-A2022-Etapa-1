@@ -1,10 +1,12 @@
-import {checkEmail, checkPassword} from "./common.js";
+import {checkEmail, checkPassword, showErrorOnBlur} from "./common.js";
 
 window.onload = function() {
     var emailInput = document.getElementById('email');
     var submitButton = document.getElementById('log-in');
     var passwordInput = document.getElementById ('password');
     var checkbox = document.getElementById('show-password');
+    var emailBoolean;
+    var passwordBoolean;
 
     checkbox.addEventListener ('change', function (event) {
         if (event.target.checked) {
@@ -16,50 +18,33 @@ window.onload = function() {
     });
 
     emailInput.onfocus = function () {
-        if (document.getElementById("mail-error-message") != null){
-            document.getElementById("mail-error-message").remove();
+        if (document.getElementById('mail-error-message') != null){
+            document.getElementById('mail-error-message').remove();
         }
     }
 
-    emailInput.onblur = function () {
-        if (!checkEmail(emailInput.value)) {
-            emailInput.classList.add('error');
-            var mailError = document.createElement('p');
-            mailError.innerText = 'Incorrect mail';
-            mailError.id = "mail-error-message";
-            document.getElementById("input-label-mail").appendChild(mailError);
-        }
-        else {
-            emailInput.classList.remove('error');
-        }
+    emailInput.onblur =  function (){
+        showErrorOnBlur (checkEmail, emailInput, 'mailError', 'mail-error-message' ,'input-label-mail')
     }
 
     passwordInput.onfocus = function () {
-        if (document.getElementById("password-error-message") != null){
-            document.getElementById("password-error-message").remove();
+        if (document.getElementById('password-error-message') != null){
+            document.getElementById('password-error-message').remove();
         }
     }
 
     passwordInput.onblur = function () {
-        if (!checkPassword(passwordInput.value)) {
-            passwordInput.classList.add('error');
-            var passwordError = document.createElement('p');
-            passwordError.innerText = 'Incorrect password';
-            passwordError.id = "password-error-message";
-            document.getElementById("input-label-password").appendChild(passwordError);
+            showErrorOnBlur (checkPassword, passwordInput, 'passwordError', 'password-error-message',
+            'input-label-password')
         }
-        else {
-            passwordInput.classList.remove('error');
-        }
-    }
 
     submitButton.onclick = function (event) {
         event.preventDefault();
-        if (checkEmail(emailInput.value) && checkPassword(passwordInput.value)){
+        if (checkPassword(passwordInput.value) && checkEmail(emailInput.value)){
             alert('Mail: '+ emailInput.value + ' Password: ' + passwordInput.value);
         }
         else {
-            alert ('One or more are incorrect');
+            alert ('The email or the password that you’ve entered are incorrect.');
         };
     };
 }

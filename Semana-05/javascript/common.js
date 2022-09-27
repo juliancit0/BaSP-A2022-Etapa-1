@@ -44,4 +44,4 @@ function deleteErrorOnFocus (errorId) {
     }
 }
 
-export {checkEmail, checkPassword, showErrorOnBlur, deleteErrorOnFocus};
+export {checkAlphanumeric ,checkEmail, checkPassword, showErrorOnBlur, deleteErrorOnFocus};

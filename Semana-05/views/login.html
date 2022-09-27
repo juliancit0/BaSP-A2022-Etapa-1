@@ -39,7 +39,7 @@
                     <i class="fa-solid fa-house"></i>
                     Home
                 </a>
-                <a href="#" class="red">
+                <a href="../views/sign-up.html" class="red">
                     <i class="fa-solid fa-user"></i>
                     Sign Up
                 </a>
@@ -72,29 +72,64 @@
             </div>
         </aside>
         <i id="menu" class="fa-sharp fa-solid fa-bars red"></i>
-        <main>
-            <div class="first-column grayish-navy-background"></div>
-            <form action="submit" class="second-column">
-                <h1>Trackgenix</h1>
-                <div class="container">
-                    <fieldset>
-                            <h2 class="grayish-navy">Login</h2>
-                            <div class="box" id="input-label-mail">
-                                <label for="email">Email</label>
-                                <input type="text" name="email" id="email" placeholder="Email" autocomplete="on">
-                            </div>
-                            <div class="box" id="input-label-password">
-                                <label for="password">Password</label>
-                                <input type="password" id="password" placeholder="Password" autocomplete="on">
-                            </div>
-                            <div id="test">
-                                <label for="show-password"> Show password</label>
-                                <input type="checkbox" id="show-password">
-                            </div>
-                                <button class="grayish-navy-background white" value="send" id="log-in">Log in</button>
-                    </fieldset>
+        <div class="main-footer">
+            <main>
+                <div class="first-column grayish-navy-background"></div>
+                <form action="submit" class="second-column">
+                    <h1>Trackgenix</h1>
+                    <div class="container">
+                        <fieldset>
+                                <h2 class="grayish-navy">Login</h2>
+                                <div class="box" id="input-label-mail">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" placeholder="Email" autocomplete="on">
+                                </div>
+                                <div class="box" id="input-label-password">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" placeholder="Password" autocomplete="on">
+                                </div>
+                                <div id="text-show">
+                                    <label for="show-password"> Show password</label>
+                                    <input type="checkbox" id="show-password">
+                                </div>
+                                <div id="button-anchors">
+                                    <button class="grayish-navy-background white" value="send" id="log-in">
+                                        Log in
+                                    </button>
+                                    <div class="box">
+                                        <a href="#">Forgot password?</a>
+                                        <a href="../views/sign-up.html">Create new account</a>
+                                    </div>
+                                </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <div class="icons">
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.github.com" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                 </div>
-            </form>
-        </main>
+                <div class="box">
+                    <h4>Rosario, Argentina</h4>
+                    <p>
+                        Copyright © 2022 Radium Rocket. All rights reserved
+                    </p>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

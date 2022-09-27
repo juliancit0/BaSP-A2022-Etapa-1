@@ -107,9 +107,18 @@ fieldset {
     opacity: 1;
 }
 
-.error-message,
+#name-error-message,
+#last-name-error-message,
+#dni-error-message,
+#date-error-message,
+#phone-error-message,
+#address-error-message,
+#locality-error-message,
+#zip-error-message,
 #mail-error-message,
-#password-error-message {
+#password-error-message,
+#repeat-password-error-message,
+#not-match-error-message {
     color: #F33413;
 }
 
