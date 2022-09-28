@@ -254,3 +254,4 @@ window.onload = function () {
 }
 
 }
+export {checkName};

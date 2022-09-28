@@ -260,6 +260,20 @@ form .container .title {
     opacity: .5;
 }
 
+.error {
+    border: 1px solid #F33413;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+#name-error-message,
+#email-error-message,
+#select-error-message,
+#text-error-message{
+    color: #F33413;
+    align-self: flex-start;
+}
+
 /* Products, enterprise and support */
 
 #products-enterprise-support {

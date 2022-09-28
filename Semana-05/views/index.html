@@ -322,20 +322,20 @@
                     <form>
                         <div class="container">
                             <div class="box">
-                                <div class="title">
+                                <div class="title" id="input-name-box">
                                     <label>Name</label>
-                                    <input type="text" placeholder="Your Name Here">
+                                    <input type="text" placeholder="Your Name Here" id="name-input">
                                 </div>
-                                <div class="title">
+                                <div class="title" id="input-email-box">
                                     <label>Email</label>
-                                    <input type="mail" placeholder="Your Email Here">
+                                    <input type="mail" placeholder="Your Email Here" id="email-input">
                                 </div>
                             </div>
                             <div class="title" id="title-area">
                                 <div id="title-button">
                                     <label class="grayish-navy"> Area </label>
-                                    <select>
-                                        <option value="" disabled selected hidden>Contact Area</option>
+                                    <select id="select-input">
+                                        <option value="" selected hidden>Contact Area</option>
                                         <option value="human-resources" class="grayish-navy">Human Resources</option>
                                         <option value="systems" class="grayish-navy">Systems</option>
                                         <option value="commercialization" class="grayish-navy">Commercialization</option>
@@ -343,9 +343,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div id="input-text-box">
                             <label>Message</label>
-                            <textarea name="message" placeholder="Your Message Here"></textarea>
+                            <textarea name="message" placeholder="Your Message Here" id="text-input"></textarea>
                         </div>
                         <div class="buttons">
                             <button type="submit" id="send-message" class="grayish-navy">
