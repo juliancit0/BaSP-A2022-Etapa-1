@@ -19,8 +19,8 @@ window.onload = function() {
     emailInput.onfocus = function () {
         if (document.getElementById('mail-error-message') != null){
             document.getElementById('mail-error-message').remove();
-            focusedField = true;
         }
+        focusedField = true;
     }
 
     emailInput.onblur =  function (){
@@ -30,8 +30,8 @@ window.onload = function() {
     passwordInput.onfocus = function () {
         if (document.getElementById('password-error-message') != null){
             document.getElementById('password-error-message').remove();
-            focusedField = true;
         }
+        focusedField = true;
     }
 
     passwordInput.onblur = function () {
