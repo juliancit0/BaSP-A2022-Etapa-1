@@ -5,8 +5,7 @@ window.onload = function() {
     var submitButton = document.getElementById('log-in');
     var passwordInput = document.getElementById ('password');
     var checkbox = document.getElementById('show-password');
-    var emailBoolean;
-    var passwordBoolean;
+    var focusedField = false;
 
     checkbox.addEventListener ('change', function (event) {
         if (event.target.checked) {
@@ -20,6 +19,7 @@ window.onload = function() {
     emailInput.onfocus = function () {
         if (document.getElementById('mail-error-message') != null){
             document.getElementById('mail-error-message').remove();
+            focusedField = true;
         }
     }
 
@@ -30,6 +30,7 @@ window.onload = function() {
     passwordInput.onfocus = function () {
         if (document.getElementById('password-error-message') != null){
             document.getElementById('password-error-message').remove();
+            focusedField = true;
         }
     }
 
@@ -40,7 +41,8 @@ window.onload = function() {
 
     submitButton.onclick = function (event) {
         event.preventDefault();
-        if (checkPassword(passwordInput.value) && checkEmail(emailInput.value)){
+        var errorLists = document.getElementsByClassName('error');
+        if (errorLists.length==0 && focusedField) {
             alert('Mail: '+ emailInput.value + ' Password: ' + passwordInput.value);
         }
         else {

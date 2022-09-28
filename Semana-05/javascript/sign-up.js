@@ -46,7 +46,6 @@ function checkDate (date) {
 }
 
 function checkPhone (phone) {
-    console.log (checkNumbers(phone));
     return checkNumbers(phone) && phone.length == 10;
 }
 
@@ -88,12 +87,15 @@ function countLetters (text) {
 }
 
 function checkAlphanumericWithSpaces (text) {
+    for (var i = 0; i< text.length; i++) {
         if (!((text[i].charCodeAt(0) >= 48 && text[i].charCodeAt(0) <= 57) ||
         (text[i].charCodeAt(0) >= 65 && text[i].charCodeAt(0) <= 90) ||
-        (text[i].charCodeAt(0) >= 97 && text[i].charCodeAt(0) <= 122) || text[i] == ' ')) {
+        (text[i].charCodeAt(0) >= 97 && text[i].charCodeAt(0) <= 122) || text[i]==' ')) {
             return false;
         }
     }
+    return true;
+}
 
 function checkLocality (locality){
     return countLetters(locality) > 3 && checkAlphanumericWithSpaces(locality);
@@ -118,6 +120,7 @@ window.onload = function () {
     var passwordInput = document.getElementById('password');
     var repeatPasswordInput = document.getElementById('repeat-password');
     var submitButton = document.getElementById('create-account');
+    var focusedField = false;
 
     nameInput.onblur = function () {
         showErrorOnBlur (checkName, nameInput, 'nameError', 'name-error-message', 'input-name');
@@ -125,6 +128,7 @@ window.onload = function () {
 
     nameInput.onfocus = function () {
         deleteErrorOnFocus ('name-error-message');
+        focusedField = true;
     }
 
     lastNameInput.onblur = function () {
@@ -133,6 +137,7 @@ window.onload = function () {
 
     lastNameInput.onfocus = function () {
         deleteErrorOnFocus ('last-name-error-message');
+        focusedField = true;
     }
 
     dniInput.onblur = function () {
@@ -141,6 +146,7 @@ window.onload = function () {
 
     dniInput.onfocus = function () {
         deleteErrorOnFocus ('dni-error-message');
+        focusedField = true;
     }
 
     dateInput.onblur = function () {
@@ -149,6 +155,7 @@ window.onload = function () {
 
     dateInput.onfocus = function () {
         deleteErrorOnFocus ('date-error-message');
+        focusedField = true;
     }
 
     phoneInput.onblur = function () {
@@ -157,6 +164,7 @@ window.onload = function () {
 
     phoneInput.onfocus = function () {
         deleteErrorOnFocus ('phone-error-message');
+        focusedField = true;
     }
 
     addresInput.onblur = function () {
@@ -165,6 +173,7 @@ window.onload = function () {
 
     addresInput.onfocus = function () {
         deleteErrorOnFocus ('address-error-message');
+        focusedField = true;
     }
 
     localityInput.onblur = function () {
@@ -173,6 +182,7 @@ window.onload = function () {
 
     localityInput.onfocus = function () {
         deleteErrorOnFocus ('locality-error-message');
+        focusedField = true;
     }
 
     zipInput.onblur = function () {
@@ -181,6 +191,7 @@ window.onload = function () {
 
     zipInput.onfocus = function () {
         deleteErrorOnFocus ('zip-error-message');
+        focusedField = true;
     }
 
     emailInput.onblur =  function () {
@@ -189,6 +200,7 @@ window.onload = function () {
 
     emailInput.onfocus = function () {
         deleteErrorOnFocus ('mail-error-message');
+        focusedField = true;
     }
 
     passwordInput.onblur = function () {
@@ -198,6 +210,7 @@ window.onload = function () {
 
     passwordInput.onfocus = function () {
         deleteErrorOnFocus ('password-error-message');
+        focusedField = true;
     }
 
     repeatPasswordInput.onblur = function () {
@@ -218,10 +231,26 @@ window.onload = function () {
     repeatPasswordInput.onfocus = function () {
         deleteErrorOnFocus ('repeat-password-error-message');
         deleteErrorOnFocus ('not-match-error-message');
+        var focusedField = true;
     }
 
-    /* submitButton.onclick {
-
-    } */
+    submitButton.onclick = function (event) {
+        event.preventDefault();
+        var errorLists = document.getElementsByClassName('error');
+        if (errorLists.length==0 && focusedField) {
+            alert ('Name:' + nameInput.value + '\n Last name:' +lastNameInput.value + '\nDNI:' +
+            dniInput.value +  '\n Date:' + dateInput.value + '\nPhone:' + phoneInput.value +
+            '\n Address:' +addresInput.value + '\nLocality:' + localityInput.value
+            +'\nZip code:' + zipInput.value + '\n Email:' +emailInput.value +
+            '\n Password:' + passwordInput.value + '\n Repeat password:' +
+            repeatPasswordInput.value)
+        }
+        else if (errorLists.length==0) {
+            alert ('You must complete the form.')
+        }
+        else {
+            alert ('One or more fields are incorrects.')
+        }
+}
 
 }
