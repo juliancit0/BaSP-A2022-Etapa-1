@@ -1,11 +1,11 @@
-import {checkEmail, checkPassword, showErrorOnBlur} from "./common.js";
+import {checkEmail, checkPassword, showErrorOnBlur, checkAllFields} from "./common.js";
 
 window.onload = function() {
     var emailInput = document.getElementById('email');
     var submitButton = document.getElementById('log-in');
     var passwordInput = document.getElementById ('password');
     var checkbox = document.getElementById('show-password');
-    var focusedField = false;
+    var inputList = document.querySelectorAll('input');
 
     checkbox.addEventListener ('change', function (event) {
         if (event.target.checked) {
@@ -20,7 +20,6 @@ window.onload = function() {
         if (document.getElementById('mail-error-message') != null){
             document.getElementById('mail-error-message').remove();
         }
-        focusedField = true;
     }
 
     emailInput.onblur =  function (){
@@ -31,7 +30,6 @@ window.onload = function() {
         if (document.getElementById('password-error-message') != null){
             document.getElementById('password-error-message').remove();
         }
-        focusedField = true;
     }
 
     passwordInput.onblur = function () {
@@ -42,11 +40,16 @@ window.onload = function() {
     submitButton.onclick = function (event) {
         event.preventDefault();
         var errorLists = document.getElementsByClassName('error');
-        if (errorLists.length==0 && focusedField) {
-            alert('Mail: '+ emailInput.value + ' Password: ' + passwordInput.value);
+        if (checkAllFields(inputList)){
+            if (errorLists.length==0) {
+                alert('Mail: '+ emailInput.value + ' Password: ' + passwordInput.value);
+            }
+            else {
+                alert ('The email or the password that you’ve entered are incorrect.');
+            }
         }
         else {
-            alert ('The email or the password that you’ve entered are incorrect.');
-        };
-    };
+            alert('You must complete all fields')
+        }
+    }
 }

@@ -9,6 +9,31 @@ function checkAlphanumeric (text) {
     return true;
 }
 
+function checkAlphanumericWithSpaces (text) {
+    for (var i = 0; i< text.length; i++) {
+        if (!((text[i].charCodeAt(0) >= 48 && text[i].charCodeAt(0) <= 57) ||
+        (text[i].charCodeAt(0) >= 65 && text[i].charCodeAt(0) <= 90) ||
+        (text[i].charCodeAt(0) >= 97 && text[i].charCodeAt(0) <= 122) || text[i]==' ')) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function checkLetters (text) {
+    for (var i = 0; i< text.length; i++) {
+        if (!((text[i].charCodeAt(0) >= 65 && text[i].charCodeAt(0) <= 90) ||
+        (text[i].charCodeAt(0) >= 97 && text[i].charCodeAt(0) <= 122))) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function checkName (name) {
+    return name.length >= 3 && checkLetters(name);
+}
+
 function checkEmail (mail) {
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
     if (mail.toLowerCase().match(emailExpression) == null){
@@ -44,4 +69,15 @@ function deleteErrorOnFocus (errorId) {
     }
 }
 
-export {checkAlphanumeric ,checkEmail, checkPassword, showErrorOnBlur, deleteErrorOnFocus};
+function checkAllFields (inputList) {
+    for (var input of inputList){
+        if ('' == input.value){
+            return false;
+        }
+    }
+    return true;
+}
+
+export {checkAlphanumeric ,checkEmail, checkPassword,
+    showErrorOnBlur, deleteErrorOnFocus, checkName,
+    checkAlphanumericWithSpaces, checkAllFields, checkLetters};
