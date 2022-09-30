@@ -1,12 +1,11 @@
-import {checkAlphanumeric , checkPassword ,  showErrorOnBlur, deleteErrorOnFocus, checkEmail} from "./common.js";
-import { checkName } from "./sign-up.js";
+import {checkAlphanumericWithSpaces , checkName ,  showErrorOnBlur, deleteErrorOnFocus, checkEmail, checkAllFields} from "./common.js";
 
 function checkSelect(text) {
     console.log (text);
     return !text == '';
 }
 function checkText (text) {
-    return checkAlphanumeric(text) && text.length >= 3;
+    return checkAlphanumericWithSpaces(text) && text.length >= 3;
 }
 
 window.onload = function () {
@@ -14,8 +13,9 @@ window.onload = function () {
     var emailInput = document.getElementById('email-input');
     var selectInput = document.getElementById('select-input');
     var textInput =  document.getElementById('text-input');
-    var focusedField = false;
     var submitButton = document.getElementById('send-message');
+    var inputList = document.querySelectorAll ('input');
+    
 
     nameInput.onblur = function () {
         showErrorOnBlur (checkName, nameInput, 'nameError', 'name-error-message', 'input-name-box');
@@ -23,7 +23,6 @@ window.onload = function () {
 
     nameInput.onfocus = function () {
         deleteErrorOnFocus('name-error-message');
-        focusedField = true;
     }
 
     emailInput.onblur = function () {
@@ -32,7 +31,6 @@ window.onload = function () {
 
     emailInput.onfocus = function () {
         deleteErrorOnFocus ('email-error-message');
-        focusedField = true;
     }
 
     selectInput.onblur = function () {
@@ -44,12 +42,11 @@ window.onload = function () {
     }
 
     textInput.onblur = function () {
-        showErrorOnBlur (checkName, textInput, 'textError', 'text-error-message', 'input-text-box');
+        showErrorOnBlur (checkText, textInput, 'textError', 'text-error-message', 'input-text-box');
     }
 
     textInput.onfocus = function () {
         deleteErrorOnFocus ('text-error-message');
-        focusedField = true;
     }
 
     selectInput.onblur = function () {
@@ -73,14 +70,17 @@ window.onload = function () {
     submitButton.onclick = function (event) {
         event.preventDefault();
         var errorLists = document.getElementsByClassName('error');
-        if (errorLists.length==0 && focusedField) {
-            alert ('Name:' + nameInput.value + '\nEmail: ' + emailInput.value + '\nContact area: ' + selectInput.value +
-            '\n Message: ' + textInput.value);
+        if (checkAllFields(inputList) && selectInput.value != '' && textInput.value!= ''){
+            if (errorLists.length==0) {
+                alert ('Name:' + nameInput.value + '\nEmail: ' + emailInput.value + '\nContact area: ' + selectInput.value +
+                '\n Message: ' + textInput.value);
+            }
+            else {
+                alert ('One or more fields are incorrects.')
+            }
         }
         else {
-            alert ('One or more fields are incorrects.')
+            alert('You must complete all the fields');
         }
-}
-
-
+    }
 }
