@@ -77,7 +77,3 @@ function checkAllFields (inputList) {
     }
     return true;
 }
-
-export {checkAlphanumeric ,checkEmail, checkPassword,
-    showErrorOnBlur, deleteErrorOnFocus, checkName,
-    checkAlphanumericWithSpaces, checkAllFields, checkLetters};

@@ -1,6 +1,4 @@
-import {checkEmail, checkPassword, showErrorOnBlur, checkAllFields} from "./common.js";
-
-window.onload = function() {
+window.onload = function () {
     var emailInput = document.getElementById('email');
     var submitButton = document.getElementById('log-in');
     var passwordInput = document.getElementById ('password');
@@ -22,7 +20,7 @@ window.onload = function() {
         }
     }
 
-    emailInput.onblur =  function (){
+    emailInput.onblur =  function () {
         showErrorOnBlur (checkEmail, emailInput, 'mailError', 'mail-error-message' ,'input-label-mail')
     }
 

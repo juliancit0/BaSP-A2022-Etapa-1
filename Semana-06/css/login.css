@@ -20,6 +20,7 @@ fieldset {
     border-radius: 10px;
 }
 
+
 .main-footer {
     display: flex;
     flex-direction: column;
@@ -60,7 +61,6 @@ fieldset {
 .second-column .box{
     display: flex;
     flex-direction: column;
-    align-self: center;
     align-items: flex-start;
 }
 
@@ -74,7 +74,7 @@ fieldset {
     align-self:center;
     margin-top: 2%;
     margin-bottom: 0px;
-    width: 25%;
+    width:100%;
     max-width: 1000px;
     border: 1px;
 }
@@ -99,6 +99,7 @@ fieldset {
 
 #button-anchors {
     display: flex;
+    flex-direction: column;
 }
 
 .error {

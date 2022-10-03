@@ -1,7 +1,3 @@
-import { showErrorOnBlur, checkPassword, checkEmail ,
-deleteErrorOnFocus, checkName, checkAlphanumericWithSpaces,
-checkAllFields, checkLetters} from "./common.js"
-
 function checkNumbers (text) {
     for (var i = 0; i< text.length; i++) {
         if (!(text[i].charCodeAt(0) >= 48 && text[i].charCodeAt(0) <= 57)) {
@@ -190,7 +186,7 @@ window.onload = function () {
         notMatchError.innerText = 'Passwords don’t match.';
         notMatchError.id = "not-match-error-message";
         document.getElementById("input-label-repeat-password").appendChild(notMatchError);
-    }
+        }
         else {
             passwordInput.classList.remove('error');
         }
@@ -204,7 +200,12 @@ window.onload = function () {
     submitButton.onclick = function (event) {
         event.preventDefault();
         var errorLists = document.getElementsByClassName('error')
-        if (checkAllFields(inputList)) {
+        if (passwordInput.value != repeatPasswordInput.value){
+            alert('Passwords must match');
+            passwordInput.classList.add('error');
+            repeatPasswordInput.classList.add('error');
+        }
+        else if (checkAllFields(inputList)) {
             if (errorLists.length==0) {
                 alert ('Name:' + nameInput.value + '\n Last name:' +lastNameInput.value + '\nDNI:' +
                 dniInput.value +  '\n Date:' + dateInput.value + '\nPhone:' + phoneInput.value +

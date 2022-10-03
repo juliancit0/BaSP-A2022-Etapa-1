@@ -1,5 +1,3 @@
-import {checkAlphanumericWithSpaces , checkName ,  showErrorOnBlur, deleteErrorOnFocus, checkEmail, checkAllFields} from "./common.js";
-
 function checkSelect(text) {
     console.log (text);
     return !text == '';
