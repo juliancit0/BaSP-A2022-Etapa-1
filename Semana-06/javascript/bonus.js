@@ -1,5 +1,4 @@
 function checkSelect(text) {
-    console.log (text);
     return !text == '';
 }
 function checkText (text) {

@@ -69,8 +69,6 @@ function countLetters (text) {
     return quantityLetters;
 }
 
-
-
 function checkLocality (locality){
     return countLetters(locality) > 3 && checkAlphanumericWithSpaces(locality);
 }
@@ -78,6 +76,20 @@ function checkLocality (locality){
 function checkZip (zip) {
     return checkNumbers(zip) && (zip.length == 4 ||
     zip.length == 5);
+}
+
+function changeDateFormat (date) {
+    var dateAsList =  date.split('/');
+    var newDate = '';
+    newDate = dateAsList[1]+ '/' + dateAsList [0] + '/' + dateAsList [2];
+    return newDate;
+}
+
+function completeField (inputType, itemKey) {
+    if (localStorage.getItem(itemKey)) {
+        inputType.value = localStorage.getItem(itemKey);
+    }
+
 }
 
 window.onload = function () {
@@ -94,6 +106,18 @@ window.onload = function () {
     var repeatPasswordInput = document.getElementById('repeat-password');
     var submitButton = document.getElementById('create-account');
     var inputList = document.querySelectorAll('input');
+
+    completeField (nameInput, 'name');
+    completeField (lastNameInput, 'lastName');
+    completeField (dniInput, 'dni');
+    completeField (dateInput, 'dob');
+    completeField (phoneInput, 'phone');
+    completeField (addresInput, 'address');
+    completeField (localityInput, 'city');
+    completeField (zipInput, 'zip');
+    completeField (emailInput, 'email');
+    completeField (passwordInput, 'password');
+
 
 
     nameInput.onblur = function () {
@@ -213,7 +237,7 @@ window.onload = function () {
                 '&email=' + emailInput.value +
                 '&password=' + passwordInput.value +
                 '&dni=' + dniInput.value +
-                '&dob=' + dateInput.value +
+                '&dob=' + changeDateFormat(dateInput.value) +
                 '&phone=' + phoneInput.value +
                 '&address=' + addresInput.value +
                 '&city=' + localityInput.value +
@@ -227,7 +251,14 @@ window.onload = function () {
                         if (object.success) {
                             alert(object.msg);
                             for (var property in object.data) {
-                                alertMsg += property + ': ' + object.data[property] + '\n';
+                                if (property != 'dob') {
+                                    alertMsg += property + ': ' + object.data[property] + '\n';
+                                    localStorage.setItem(property, object.data[property]);
+                                }
+                                else {
+                                    alertMsg += property + ': ' + changeDateFormat(object.data[property]) + '\n';
+                                    localStorage.setItem(property, changeDateFormat(object.data[property]));
+                                }
                             }
                         }
                         else {
