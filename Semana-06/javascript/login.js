@@ -38,9 +38,22 @@ window.onload = function () {
     submitButton.onclick = function (event) {
         event.preventDefault();
         var errorLists = document.getElementsByClassName('error');
+        var urlWithQP = 'https://basp-m2022-api-rest-server.herokuapp.com/login?' +
+        'email=' + emailInput.value +
+        '&password=' + passwordInput.value;
         if (checkAllFields(inputList)){
             if (errorLists.length==0) {
-                alert('Mail: '+ emailInput.value + ' Password: ' + passwordInput.value);
+                fetch(urlWithQP)
+                    .then (function(response) {
+                        return response.json();
+                    })
+                    .then (function(data) {
+                        alert (data.msg);
+                        alert('Mail: '+ emailInput.value + ' Password: ' + passwordInput.value);
+                    })
+                    .catch (function(error) {
+                        alert(error)
+                    })
             }
             else {
                 alert ('The email or the password that you’ve entered are incorrect.');
