@@ -207,12 +207,39 @@ window.onload = function () {
         }
         else if (checkAllFields(inputList)) {
             if (errorLists.length==0) {
-                alert ('Name:' + nameInput.value + '\n Last name:' +lastNameInput.value + '\nDNI:' +
-                dniInput.value +  '\n Date:' + dateInput.value + '\nPhone:' + phoneInput.value +
-                '\n Address:' +addresInput.value + '\nLocality:' + localityInput.value
-                +'\nZip code:' + zipInput.value + '\n Email:' +emailInput.value +
-                '\n Password:' + passwordInput.value + '\n Repeat password:' +
-                repeatPasswordInput.value)
+                var urlWithQP = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?' +
+                'name=' + nameInput.value +
+                '&lastName=' + lastNameInput.value +
+                '&email=' + emailInput.value +
+                '&password=' + passwordInput.value +
+                '&dni=' + dniInput.value +
+                '&dob=' + dateInput.value +
+                '&phone=' + phoneInput.value +
+                '&address=' + addresInput.value +
+                '&city=' + localityInput.value +
+                '&zip=' + zipInput.value;
+                fetch(urlWithQP)
+                    .then (function (response){
+                        return response.json();
+                    })
+                    .then (function (object) {
+                        var alertMsg = '';
+                        if (object.success) {
+                            alert(object.msg);
+                            for (var property in object.data) {
+                                alertMsg += property + ': ' + object.data[property] + '\n';
+                            }
+                        }
+                        else {
+                            for (var property in object.errors) {
+                                alertMsg += object.errors[property].msg + '\n';
+                            }
+                        }
+                        alert(alertMsg);
+                    })
+                    .catch (function (error) {
+                        alert(error);
+                    })
             }
             else {
                 alert ('One or more fields are incorrects.');

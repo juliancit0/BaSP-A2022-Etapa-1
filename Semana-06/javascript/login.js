@@ -49,10 +49,12 @@ window.onload = function () {
                     })
                     .then (function(data) {
                         alert (data.msg);
-                        alert('Mail: '+ emailInput.value + ' Password: ' + passwordInput.value);
+                        if (data.success) {
+                            alert('Mail: '+ emailInput.value + ' Password: ' + passwordInput.value);
+                        }
                     })
                     .catch (function(error) {
-                        alert(error)
+                        alert(error);
                     })
             }
             else {
