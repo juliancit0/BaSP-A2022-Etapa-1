@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/sign-up.css">
+        <link rel="stylesheet" href="../css/sidebar.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+        <title>Trackgenix</title>
+        <script src="https://kit.fontawesome.com/d7c9d962f7.js" crossorigin="anonymous"></script>
+        <script src="../javascript/sign-up.js" type="module"></script>
+    </head>
+    <body id="sign-up-body">
+        <aside>
+            <div class="sidebar-top">
+                <img src="../assets/icons/sidebar/logo.png" alt="radium logo" width="77" height="91">
+                <div class="trackgenix-back">
+                    <p>Trackgenix</p>
+                    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 12.6188 0.245841 13.2124
+                        0.683415 13.6499L10.0169 22.9833C10.928 23.8945 12.4055 23.8945 13.3167 22.9833C14.2279 22.0722
+                        14.2279 20.5947 13.3167 19.6835L5.63318 12L13.3167 4.31654C14.2279 3.4053 14.2279 1.92791
+                        13.3167 1.01667C12.4055 0.105447 10.928 0.105447 10.0169 1.01667L0.683415 10.3501C0.245841
+                        10.7876 0 11.3812 0 12Z" fill="#373867"/>
+                    </svg>
+                </div>
+            </div>
+            <nav class="sidebar-middle">
+                <a href="../views/index.html" class="red">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+                <a href="#" class="red">
+                    <i class="fa-solid fa-user"></i>
+                    Sign Up
+                </a>
+                <a href="../views/login.html" class="red">
+                    <i class="fa-solid fa-user"></i>
+                    Login
+                </a>
+            </nav>
+            <div class="sidebar-bot">
+                <div id="text">
+                    <p id="underlined">Contact us</p>
+                </div>
+                <div class="all-icons-info">
+                    <div class= "icon-info">
+                        <i class="fa-solid fa-envelope" id="icon-mail"></i>
+                        <p id="mail">trackgenix@gmail.com</p>
+                    </div>
+                    <div class= "icon-info">
+                        <i class="fa-solid fa-phone" id="icon-phone"></i>
+                        <p id="phone">(000) 000-0000</p>
+                    </div>
+                    <div class= "icon-info">
+                        <i class="fa-solid fa-city" id="icon-city" ></i>
+                        <p id="address">
+                            1234 Somewhere Road #8254
+                            Nashville,TN 00000-0000
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <i id="menu" class="fa-sharp fa-solid fa-bars red"></i>
+        <div class="main-footer">
+            <main>
+                <div class="first-column grayish-navy-background"></div>
+                <form action="submit" class="second-column">
+                    <h1>Trackgenix</h1>
+                    <div class="container">
+                        <fieldset>
+                            <h2 class="grayish-navy">Create account</h2>
+                            <div class="box" id="input-name">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Name" autocomplete="on">
+                            </div>
+                            <div class="box" id="input-last-name">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="last-name" id="last-name" placeholder="Last name"
+                                autocomplete="on">
+                            </div>
+                            <div class="box" id="input-dni">
+                                <label for="dni">DNI</label>
+                                <input type="text" name="dni" id="dni" placeholder="DNI"
+                                autocomplete="on">
+                            </div>
+                            <div class="box" id="input-date">
+                                <label for="date">Date of birth</label>
+                                <input type="text" name="date" id="date" placeholder="Date of birth"
+                                autocomplete="on">
+                            </div>
+                            <div class="box" id="input-phone">
+                                <label for="phone">Phone</label>
+                                <input type="text" name="phone" id="phone-input" placeholder="Phone"
+                                autocomplete="on">
+                            </div>
+                            <div class="box" id="input-address">
+                                <label for="address-input">Addres</label>
+                                <input type="text" name="add" id="address-input" placeholder="Phone"
+                                autocomplete="on">
+                            </div>
+                            <div class="box" id="input-locality">
+                                <label for="locality">Locality</label>
+                                <input type="text" name="locality" id="locality" placeholder="Locality"
+                                autocomplete="on">
+                            </div>
+                            <div class="box" id="input-zip">
+                                <label for="zip">Zip code</label>
+                                <input type="text" name="zip" id="zip" placeholder="Zip code"
+                                autocomplete="on">
+                            </div>
+                            <div class="box" id="input-label-mail">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" placeholder="Email" autocomplete="on">
+                            </div>
+                            <div class="box" id="input-label-password">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" placeholder="Password" autocomplete="on">
+                            </div>
+                            <div class="box" id="input-label-repeat-password">
+                                <label for="password">Repeat password</label>
+                                <input type="password" id="repeat-password" placeholder="Repeat password"
+                                autocomplete="off">
+                            </div>
+                            <div id="button-anchors">
+                                <button class="grayish-navy-background white" value="submit" id="create-account">
+                                    Create account
+                                </button>
+                                <div class="box">
+                                    <a href="../views/login.html">Already have an account? Log in</a>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <div class="icons">
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.github.com" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div class="box">
+                    <h4>Rosario, Argentina</h4>
+                    <p>
+                        Copyright © 2022 Radium Rocket. All rights reserved
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
