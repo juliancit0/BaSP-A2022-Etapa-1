@@ -223,7 +223,7 @@ window.onload = function () {
 
     submitButton.onclick = function (event) {
         event.preventDefault();
-        var errorLists = document.getElementsByClassName('error')
+        var errorLists = document.getElementsByClassName('error');
         if (passwordInput.value != repeatPasswordInput.value){
             alert('Passwords must match');
             passwordInput.classList.add('error');
