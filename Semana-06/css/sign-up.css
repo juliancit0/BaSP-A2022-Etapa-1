@@ -123,6 +123,11 @@ button {
     color: #F33413;
 }
 
+#info {
+    font-size: 10px;
+    line-height: 20px;
+}
+
 @media screen and (min-width: 1024px){
     main {
         width: 88%;
@@ -140,5 +145,10 @@ button {
     #sign-up-body .container {
         width: 50%;
         max-width: 500px;
+    }
+
+    #info {
+        font-size: 12px;
+        line-height: 25px;
     }
 }

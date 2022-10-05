@@ -77,3 +77,17 @@ function checkAllFields (inputList) {
     }
     return true;
 }
+
+function showModal (element) {
+    element.classList.remove('nondisplayed');
+    element.classList.add ('displayed');
+  }
+
+function closeModal (element) {
+    element.classList.remove('displayed');
+    element.classList.add ('nondisplayed');
+}
+
+function modifyText (element, text) {
+    element.innerText = text;
+}

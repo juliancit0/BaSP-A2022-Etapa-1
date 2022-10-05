@@ -1,9 +1,14 @@
+
 window.onload = function () {
     var emailInput = document.getElementById('email');
     var submitButton = document.getElementById('log-in');
     var passwordInput = document.getElementById ('password');
     var checkbox = document.getElementById('show-password');
     var inputList = document.querySelectorAll('input');
+    var modal = document.getElementById('login-modal');
+    var cross = document.getElementsByClassName('close')[0];
+    var message = document.getElementById('msg');
+    var userInfo = document.getElementById('user-info');
 
     checkbox.addEventListener ('change', function (event) {
         if (event.target.checked) {
@@ -42,6 +47,7 @@ window.onload = function () {
         'email=' + emailInput.value +
         '&password=' + passwordInput.value;
         var errorText = '';
+        var succesText = '';
         if (checkAllFields(inputList)){
             if (errorLists.length==0) {
                 fetch(urlWithQP)
@@ -50,20 +56,24 @@ window.onload = function () {
                     })
                     .then (function(data) {
                         if (data.msg) {
-                            alert (data.msg);
+                            modifyText(message, data.msg)
                             if (data.success) {
-                                alert('Mail: '+ emailInput.value + ' Password: ' + passwordInput.value);
+                               succesText += 'Mail: '+ emailInput.value + ' Password: ' + passwordInput.value;
                             }
+                            modifyText(userInfo, succesText);
+                            showModal(modal);
                         }
                         else {
                             for (var error of data.errors) {
                                 errorText += error.msg + '\n';
                             }
-                            alert(errorText);
+                            modifyText(message, errorText);
+                            showModal(modal);
                         }
                     })
                     .catch (function(error) {
-                        alert(error);
+                        modifyText(message, error);
+                        showModal(modal);
                     })
             }
             else {
@@ -74,4 +84,15 @@ window.onload = function () {
             alert('You must complete all fields')
         }
     }
+
+    cross.onclick = function () {
+        closeModal(modal);
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+          closeModal(modal);
+        }
+      }
+
 }

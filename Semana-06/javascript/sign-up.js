@@ -106,6 +106,10 @@ window.onload = function () {
     var repeatPasswordInput = document.getElementById('repeat-password');
     var submitButton = document.getElementById('create-account');
     var inputList = document.querySelectorAll('input');
+    var modal = document.getElementById('sign-up-modal');
+    var cross = document.getElementsByClassName('close')[0];
+    var message = document.getElementById('msg');
+    var info = document.getElementById('info');
 
     completeField (nameInput, 'name');
     completeField (lastNameInput, 'lastName');
@@ -225,7 +229,8 @@ window.onload = function () {
         event.preventDefault();
         var errorLists = document.getElementsByClassName('error');
         if (passwordInput.value != repeatPasswordInput.value){
-            alert('Passwords must match');
+            modifyText(message, 'Passwords must match');
+            showModal(modal);
             passwordInput.classList.add('error');
             repeatPasswordInput.classList.add('error');
         }
@@ -249,7 +254,7 @@ window.onload = function () {
                     .then (function (object) {
                         var alertMsg = '';
                         if (object.success) {
-                            alert(object.msg);
+                            modifyText(message, object.msg);
                             for (var property in object.data) {
                                 if (property != 'dob') {
                                     alertMsg += property + ': ' + object.data[property] + '\n';
@@ -266,18 +271,32 @@ window.onload = function () {
                                 alertMsg += object.errors[property].msg + '\n';
                             }
                         }
-                        alert(alertMsg);
+                        modifyText(info, alertMsg);
+                        showModal(modal);
                     })
                     .catch (function (error) {
-                        alert(error);
+                        modifyText(message,error);
+                        showModal(modal);
                     })
             }
             else {
-                alert ('One or more fields are incorrects.');
+                modifyText(message, 'One or more fields are incorrects.')
+                showModal(modal);
             }
         }
         else {
-            alert('You must complete the form.');
+            modifyText(message,'You must complete the form.');
+            showModal(modal);
         }
     }
+
+    cross.onclick = function () {
+        closeModal(modal);
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+          closeModal(modal);
+        }
+      }
 }
