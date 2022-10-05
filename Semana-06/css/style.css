@@ -167,11 +167,6 @@ footer i:hover
     font-weight: bold;
 }
 
-.thin-line {
-    height: 0.1px;
-    background-color: #000;
-}
-
 .close:hover,
 .close:focus {
     color: black;

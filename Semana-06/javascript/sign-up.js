@@ -122,8 +122,6 @@ window.onload = function () {
     completeField (emailInput, 'email');
     completeField (passwordInput, 'password');
 
-
-
     nameInput.onblur = function () {
         showErrorOnBlur (checkName, nameInput, 'nameError', 'name-error-message', 'input-name');
     }
@@ -230,6 +228,7 @@ window.onload = function () {
         var errorLists = document.getElementsByClassName('error');
         if (passwordInput.value != repeatPasswordInput.value){
             modifyText(message, 'Passwords must match');
+            modifyText(info, '');
             showModal(modal);
             passwordInput.classList.add('error');
             repeatPasswordInput.classList.add('error');
@@ -275,17 +274,20 @@ window.onload = function () {
                         showModal(modal);
                     })
                     .catch (function (error) {
-                        modifyText(message,error);
+                        modifyText(message, error);
+                        modifyText(info, '');
                         showModal(modal);
                     })
             }
             else {
                 modifyText(message, 'One or more fields are incorrects.')
+                modifyText(info, '');
                 showModal(modal);
             }
         }
         else {
             modifyText(message,'You must complete the form.');
+            modifyText(info, '');
             showModal(modal);
         }
     }

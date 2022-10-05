@@ -68,20 +68,26 @@ window.onload = function () {
                                 errorText += error.msg + '\n';
                             }
                             modifyText(message, errorText);
+                            modifyText(userInfo, '');
                             showModal(modal);
                         }
                     })
                     .catch (function(error) {
                         modifyText(message, error);
+                        modifyText(userInfo, '');
                         showModal(modal);
                     })
             }
             else {
-                alert ('The email or the password that you’ve entered are incorrect.');
+                    modifyText(message, 'The email or the password that you’ve entered are incorrect.');
+                    modifyText(userInfo, '');
+                    showModal(modal);
             }
         }
         else {
-            alert('You must complete all fields')
+            modifyText(message, 'You must complete all fields');
+                    modifyText(userInfo, '');
+                    showModal(modal);
         }
     }
 
