@@ -23,13 +23,15 @@ provides information to the companies so they can make better decisions.
 - I created the "css" folder and styles inside of it.
 ## Week 03
 - I modified the css files and the html structure to make the web app responsive using flexbox, percentage margins
-and media querys.
+and media queries.
 ## Week 04
 - I corrected the css files and the html structure to follow the best practices.
 - I learned some javescript, made excercises and added the answers to a new index.html file.
 ## Week 05
 - I added login and sign-up pages with his styles.
 - I added the logic in .js files to validate the information in the input fields of the forms.
-
+## Week 06
+- I made an API request in the login and in the sign-up with their required query params.
+- I replaced the alerts with modals.
 
 ### _By Julian Conti_
