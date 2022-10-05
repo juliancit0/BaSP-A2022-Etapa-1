@@ -9,7 +9,7 @@ provides information to the companies so they can make better decisions.
   2. Enter to the "Semana-0X" folder that you want.
   3. Open the file "index.html" on your browser.
 - Online
-  1. Open Trackgenix web page doing [click here](https://juliancit0.github.io/BaSP-A2022-Etapa-1/Semana-05/views/index.html)
+  1. Open Trackgenix web page doing [click here](https://juliancit0.github.io/BaSP-A2022-Etapa-1/Semana-06/views/index.html)
   2. Open some javascript solved exercises doing
 [click here](https://juliancit0.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html)
 
